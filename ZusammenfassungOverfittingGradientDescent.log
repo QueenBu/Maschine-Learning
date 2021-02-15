@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  15 FEB 2021 20:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  15 FEB 2021 21:16
 entering extended mode
 **./ZusammenfassungOverfittingGradientDescent.tex
 (ZusammenfassungOverfittingGradientDescent.tex
@@ -111,4 +111,237 @@ Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 (C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/grap
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphi
+cs.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex
+.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
+)
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box49
+\UL@hyphenbox=\box50
+\UL@skip=\skip52
+\UL@hook=\toks23
+\UL@height=\dimen150
+\UL@pe=\count197
+\UL@pixel=\dimen151
+\ULC@box=\box51
+Package: ulem 2019/11/18
+\ULdepth=\dimen152
+)
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend
+-pdftex.def
+File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count198
+\l__pdf_internal_box=\box52
+) (ZusammenfassungOverfittingGradientDescent.aux)
+\openout1 = `ZusammenfassungOverfittingGradientDescent.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pd
+f.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count199
+\scratchdimen=\dimen153
+\scratchbox=\box53
+\nofMPsegments=\count266
+\nofMParguments=\count267
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count268
+\MPscratchDim=\dimen154
+\MPnumerator=\count269
+\makeMPintoPDFobject=\count270
+\everyMPtoPDFconversion=\toks25
+)
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstop
+df-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infware
+rr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvde
+finekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions
+.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.s
+ty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetke
+ys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftex
+cmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+)
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 17.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+
+
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
+6.
+
+(C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
+
+Overfull \hbox (930.7022pt too wide) in paragraph at lines 18--43
+[][] 
+ []
+
+[1{C:/Users/SutonToch/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+
+]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
+<./images//empty.jpg, id=13, 250.68657pt x 128.73094pt>
+File: ./images//empty.jpg Graphic file (type jpg)
+<use ./images//empty.jpg>
+Package pdftex.def Info: ./images//empty.jpg  used on input line 79.
+(pdftex.def)             Requested size: 360.0pt x 184.88524pt.
+ [2 <./images//empty.jpg>]
+
+LaTeX Warning: Command \textasciiacute invalid in math mode on input line 122.
+
+
+LaTeX Warning: Command \textasciiacute invalid in math mode on input line 122.
+
+Missing character: There is no ´ in font cmr10!
+[3] [4] [5] [6]
+<./images//PT.jpg, id=36, 564.60938pt x 197.98969pt>
+File: ./images//PT.jpg Graphic file (type jpg)
+<use ./images//PT.jpg>
+Package pdftex.def Info: ./images//PT.jpg  used on input line 262.
+(pdftex.def)             Requested size: 360.0pt x 126.24167pt.
+ [7 <./images//PT.jpg>]
+<./images//BGD.jpg, id=41, 562.35094pt x 270.25969pt>
+File: ./images//BGD.jpg Graphic file (type jpg)
+<use ./images//BGD.jpg>
+Package pdftex.def Info: ./images//BGD.jpg  used on input line 288.
+(pdftex.def)             Requested size: 360.0pt x 173.01096pt.
+ [8 <./images//BGD.jpg>]
+<./images//IGD.jpg, id=45, 523.20468pt x 234.1247pt>
+File: ./images//IGD.jpg Graphic file (type jpg)
+<use ./images//IGD.jpg>
+Package pdftex.def Info: ./images//IGD.jpg  used on input line 301.
+(pdftex.def)             Requested size: 360.0pt x 161.09607pt.
+ [9 <./images//IGD.jpg>]
+<./images//MP.jpg, id=49, 639.13782pt x 395.22656pt>
+File: ./images//MP.jpg Graphic file (type jpg)
+<use ./images//MP.jpg>
+Package pdftex.def Info: ./images//MP.jpg  used on input line 350.
+(pdftex.def)             Requested size: 360.0pt x 222.61592pt.
+ [10]
+<./images//forwardProp.jpg, id=54, 536.75531pt x 406.51875pt>
+File: ./images//forwardProp.jpg Graphic file (type jpg)
+<use ./images//forwardProp.jpg>
+Package pdftex.def Info: ./images//forwardProp.jpg  used on input line 353.
+(pdftex.def)             Requested size: 360.0pt x 272.65147pt.
+<./images//forwardPropBatch.jpg, id=55, 642.14906pt x 404.26031pt>
+File: ./images//forwardPropBatch.jpg Graphic file (type jpg)
+<use ./images//forwardPropBatch.jpg>
+Package pdftex.def Info: ./images//forwardPropBatch.jpg  used on input line 355
+.
+(pdftex.def)             Requested size: 360.0pt x 226.64331pt.
+ [11 <./images//MP.jpg> <./images//forwardProp.jpg>]
+<./images//BackwardProp.jpg, id=59, 606.76688pt x 409.53pt>
+File: ./images//BackwardProp.jpg Graphic file (type jpg)
+<use ./images//BackwardProp.jpg>
+Package pdftex.def Info: ./images//BackwardProp.jpg  used on input line 357.
+(pdftex.def)             Requested size: 360.0pt x 242.98286pt.
+ [12 <./images//forwardPropBatch.jpg> <./images//BackwardProp.jpg>]
+(ZusammenfassungOverfittingGradientDescent.aux) ) 
+Here is how much of TeX's memory you used:
+ 3036 strings out of 479618
+ 44146 string characters out of 2863126
+ 326669 words of memory out of 3000000
+ 20164 multiletter control sequences out of 15000+200000
+ 411010 words of font info for 55 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,16n,78p,410b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\SutonToch\AppData\L
+ocal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/SutonToch/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Use
+rs/SutonToch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx1
+2.pfb><C:/Users/SutonToch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmbx6.pfb><C:/Users/SutonToch/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmbx8.pfb><C:/Users/SutonToch/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/SutonToch/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/SutonToch/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/S
+utonToch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+><C:/Users/SutonToch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Users/SutonToch/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr6.pfb><C:/Users/SutonToch/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/SutonToch/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/SutonToch/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/SutonToch
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Us
+ers/SutonToch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols
+/msam10.pfb>
+Output written on ZusammenfassungOverfittingGradientDescent.pdf (12 pages, 5524
+95 bytes).
+PDF statistics:
+ 114 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+

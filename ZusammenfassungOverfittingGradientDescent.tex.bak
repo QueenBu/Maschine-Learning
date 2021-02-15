@@ -4,6 +4,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
 \graphicspath{ {./images/} }
 \author{Bianca}
 \DeclareMathOperator*{\argmin}{argmin}
@@ -12,35 +14,31 @@
 \begin{document}
 \begin{flushleft}
 \section{Begriffe}
-
 \begin{table}[]
-%   \centering
-    \begin{tabular}{|l|l|l|}
-        \hline
-        \textbf{Begriff}& \textbf{Erklärung} & \textbf{Beispiel} \\
-        & & \\
-        \hline
-        X & Menge der Feature Vektoren & Vektoren mit den Eigenschaften der Pilze\\
-        &&\\
-        \textbf{X} & Feature Vektor; Feature Domain; &\\
-        &Feature Space&\\
-        &&\\
-        x & Dimension des korrelierenden Vektors &\\
-        &&\\
-        \textbf{w}&Weight-Vektor&\\
-        &&\\
-        $\mathbf{w}^T\mathbf{x}$ && \\
-        &&\\
-        $c(x_{n})$ & Klasse von $x_{n}$  & $c(x_{1}) = "toxic"$\\
-        && $c(x_{2}) = "edible"$\\
-        &&\\
-        $\mathbf{R}$&&\\
-        \hline
-    \end{tabular}
+\begin{tabular}{lllll}
+\textit{O}                                                             & is a set of objects                                                                & Mushrooms                                                                                                            &  &  \\
+\textit{C}                                                             & is a set of classes                                                                & essbar oder nicht                                                                                                    &  &  \\
+\textit{X}                                                             & Set/ Menge der Feature Vektoren                                                    & Vektoren mit den Eigenschaften der Pilze                                                                             &  &  \\
+\textbf{X}                                                             & Feature Vektor; Feature Space; Feature Domain                                      &                                                                                                                      &  &  \\
+\textbf{x}                                                             & one feature vector                                                                 & ein Pilz                                                                                                             &  &  \\
+x                                                                      & single feature                                                                     & ein eigenschaft von einem Pilz (z.B. braun)                                                                          &  &  \\
+\textbf{w}                                                             & Weight-Vektor                                                                      &                                                                                                                      &  &  \\
+\textit{D = \{(x1, c(x1)), … , ((xn, c(xn))\}}                         & classification knowledge alias the example set                                     & schon bestimmte Pilze                                                                                                &  &  \\
+\textit{D = \{(x1, y1), … , ((xn, yn)\}}                               & same but for regression                                                            & Mietpreise von Wohnungen                                                                                             &  &  \\
+$\alpha(o) = x$                                                               & model formation function                                                           & Funktion zur Bestimmung der Pilz-Eigenschaften                                                                       &  &  \\
+y(x) (Ziel y(x) = c(x))                                                & model function/ classifier                                                         & Bestimmung ob essbar anhand der Eigenschaften                                                                        &  &  \\
+\textit{$\gamma(o)$ mit $O \rightarrow C$}                                                & ideal target function / ideal classifier für O                                     & Pilzexperte der Pilze bestimmt                                                                                       &  &  \\
+c(x) mit c: $X \rightarrow C$                                                      & ideal target function/ ideal classifier for X ; indirekt gegeben durch D           & Theoretische Ideale Bestimmung aller Pilze                                                                           &  &  \\
+$h(x), h: X \rightarrow \{0,1\}$                                                   & hypothesis/ model function  to approximate c(x)                                    & wenn es sonnig ist mache ich Sport (Regeln/ Hypothesen  zur classification)                                          &  &  \\
+$y_i$                                                                     & ground truth for $xi \in X $                                                            & der Mietpreis für eine Wohnung                                                                                       &  &  \\
+\textit{H}                                                             & hypothesis space                                                                   & Menge alle möglichen Hypothesen/Regeln                                                                               &  &  \\
+\textit{$VH,D = \{h(x) | h(x) \in H \wedge ( \forall(x, c(x)) \in D : h(x) = c(x)) \}$} & version space : Menge aller möglichen Regeln (h(x)) die sich aus D ableiten lassen & Wenn es sonnig ist gehe ich raus, Wenn es warm ist gehe ich raus, wenn es windig ist und scheint gehe ich raus, etc. &  &  \\
+\textit{\#}                                                            & true error                                                                         & die summe aller falsch klassifizieren x durch Gesamtzahl aller x                                                     &  &  \\
+\textit{$X \in X / C \in C$}                                                 & random variables                                                                   & ein random Pilz bzw. eine random Klasse                                                                              &  &  \\
+$p(x, c) = P(X=x, C=c)$                                                  & the probability of the joint event that $x \in X$ \& x belongs to class $c \in C   $ & die Wahrscheinlichkeit das ein Pilz zu einer bestimmten Klasse gehört                                                &  &  \\
+$\eta$                                                                      & {\ul learning rate}                                                                & a small positiv constant                                                                                             &  &  \\
+\end{tabular}
 \end{table}
-
- \newpage
- 
 \section{Definition Formel \& Algorithmen}
 
 \subsection{Specification of learning tasks}
