@@ -4,6 +4,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
 \graphicspath{ {./images/} }
 \author{Bianca}
 \DeclareMathOperator*{\argmin}{argmin}
@@ -14,29 +16,31 @@
 \section{Begriffe}
 
 \begin{table}[]
-%   \centering
-    \begin{tabular}{|l|l|l|}
-        \hline
-        \textbf{Begriff}& \textbf{Erklärung} & \textbf{Beispiel} \\
-        & & \\
-        \hline
-        X & Menge der Feature Vektoren &\\
-        &&\\
-        \textbf{X} & Feature Vektor; &\\
-        &Feature Space&\\
-        &&\\
-        x & Dimension des korrelierenden Vektors &\\
-        &&\\
-        \textbf{w}&Weight-Vektor&\\
-        &&\\
-        $\mathbf{w}^T\mathbf{x}$ && \\
-        &&\\
-        $c(x_{n})$ & Klasse von $x_{n}$  & $c(x_{1}) = "toxic"$\\
-        && $c(x_{2}) = "edible"$\\
-        &&\\
-        $\mathbf{R}$&&\\
-        \hline
-    \end{tabular}
+\begin{tabular}{lllll}
+\textit{O}                                                             & is a set of objects                                                                & Mushrooms                                                                                                            &  &  \\
+\textit{C}                                                             & is a set of classes                                                                & essbar oder nicht                                                                                                    &  &  \\
+\textit{X}                                                             & Set/ Menge der Feature Vektoren                                                    & Vektoren mit den Eigenschaften der Pilze                                                                             &  &  \\
+\textbf{X}                                                             & Feature Vektor; Feature Space; Feature Domain                                      &                                                                                                                      &  &  \\
+\textbf{x}                                                             & one feature vector                                                                 & ein Pilz                                                                                                             &  &  \\
+x                                                                      & single feature                                                                     & ein eigenschaft von einem Pilz (z.B. braun)                                                                          &  &  \\
+\textbf{w}                                                             & Weight-Vektor                                                                      &                                                                                                                      &  &  \\
+\textit{D = \{(x1, c(x1)), … , ((xn, c(xn))\}}                         & classification knowledge alias the example set                                     & schon bestimmte Pilze                                                                                                &  &  \\
+\textit{D = \{(x1, y1), … , ((xn, yn)\}}                               & same but for regression                                                            & Mietpreise von Wohnungen                                                                                             &  &  \\
+α(o) = x                                                               & model formation function                                                           & Funktion zur Bestimmung der Pilz-Eigenschaften                                                                       &  &  \\
+y(x) (Ziel y(x) = c(x))                                                & model function/ classifier                                                         & Bestimmung ob essbar anhand der Eigenschaften                                                                        &  &  \\
+\textit{γ(o) mit O → C}                                                & ideal target function / ideal classifier für O                                     & Pilzexperte der Pilze bestimmt                                                                                       &  &  \\
+c(x) mit c: X → C                                                      & ideal target function/ ideal classifier for X ; indirekt gegeben durch D           & Theoretische Ideale Bestimmung aller Pilze                                                                           &  &  \\
+h(x), h: X → \{0,1\}                                                   & hypothesis/ model function  to approximate c(x)                                    & wenn es sonnig ist mache ich Sport (Regeln/ Hypothesen  zur classification)                                          &  &  \\
+yi                                                                     & ground truth for xi ∈ X                                                            & der Mietpreis für eine Wohnung                                                                                       &  &  \\
+\textit{H}                                                             & hypothesis space                                                                   & Menge alle möglichen Hypothesen/Regeln                                                                               &  &  \\
+\textit{VH,D = \{h(x) | h(x) ∈ H ∧ ( ∀(x, c(x)) ∈ D : h(x) = c(x)) \}} & version space : Menge aller möglichen Regeln (h(x)) die sich aus D ableiten lassen & Wenn es sonnig ist gehe ich raus, Wenn es warm ist gehe ich raus, wenn es windig ist und scheint gehe ich raus, etc. &  &  \\
+\textit{\#}                                                            & true error                                                                         & die summe aller falsch klassifizieren x durch Gesamtzahl aller x                                                     &  &  \\
+\textit{X ∈ X / C ∈ C}                                                 & random variables                                                                   & ein random Pilz bzw. eine random Klasse                                                                              &  &  \\
+p(x, c) = P(X=x, C=c)                                                  & the probability of the joint event that x ∈ X \& x belongs to class c ∈ C          & die Wahrscheinlichkeit das ein Pilz zu einer bestimmten Klasse gehört                                                &  &  \\
+η                                                                      & {\ul learning rate}                                                                & a small positiv constant                                                                                             &  &  \\
+                                                                       & p-dimensional direction vector w\textasciicircum →  = (w1, . . . , wp) T           &                                                                                                                      &  &  \\
+                                                                       & p + 1)-dimensional hypothesis w = (w0, w1, . . . , wp) T .                         &                                                                                                                      &  & 
+\end{tabular}
 \end{table}
 
  \newpage
@@ -126,22 +130,23 @@ Schätze $c(x)$, was implizit durch $D$ mit feature-Value-Muster
 
 \newpage
 \section{Definitionen Text}
- \subsection{Supervised learning} 
+\subsection{Supervised learning} 
     Eine Funktion mithilfe von input-output-Daten lernen; \newline
     automatisierte Klassifikation mit von Menschen bereits klassifizierten Daten als Grundlage \newline
     \textit{Beispiel: optical character recognizition}
     
- \subsection{Unsupervised learning}
+\subsection{Unsupervised learning}
     identifiziert/findet selbstständig Muster und Strukturen in Daten; \newline
     \begin{itemize}
         \item automatisierte Kategorisierung durch Cluster Analysis
         \item Parameter Optimierung durch Expectation Maximation
         \item Feature Extrahierung durch Factor Analysis
     \end{itemize}
-    \textit{Beispiel: }
+    \textit{Beispiel: intrusion detection in a network data stream}
     
- \subsection{Reinforcement learning}
+\subsection{Reinforcement learning}
     "Learn, adapt, or optimize a behavior strategy in order to maximize the ownbenefit by interpreting feedback that is provided by the environment."
+    \textit{Beispiel: program to play tetris}
 
 \subsection{Feature Vektor}
     Ein Feature Vektor ist ein Vektor in dem jede Dimension eine Eigenschaft(Feature) des beschriebenen Objektes enthält.\newline
@@ -156,12 +161,10 @@ Schätze $c(x)$, was implizit durch $D$ mit feature-Value-Muster
     \end{bmatrix}$
     \quad Besipiel: \textbf{Gitarre} = 
     $\begin{bmatrix}
-    Farbe\\
-    Baujahr\\
-    Material\\
-    .\\
-    .\\
-    x_n
+    Farbe: blau\\
+    Baujahr: 1997\\
+    Material: Holz\\
+    Elektrisch: ja\\
     \end{bmatrix}$
 
 

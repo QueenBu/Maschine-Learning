@@ -20,9 +20,9 @@
         \textbf{Begriff}& \textbf{Erklärung} & \textbf{Beispiel} \\
         & & \\
         \hline
-        X & Menge der Feature Vektoren &\\
+        X & Menge der Feature Vektoren & Vektoren mit den Eigenschaften der Pilze\\
         &&\\
-        \textbf{X} & Feature Vektor; &\\
+        \textbf{X} & Feature Vektor; Feature Domain; &\\
         &Feature Space&\\
         &&\\
         x & Dimension des korrelierenden Vektors &\\
@@ -76,7 +76,7 @@
         \item Formuliere Model-Function: $y: X \rightarrow C, \mathbf{x} \mapsto y(\mathbf{x})$
         \item Nutze Statistik, Theorie und Algorithmen aus ML um den fit zwischen $c(\mathbf{x})$ und $y(\mathbf{x})$ zu Maximieren
     \end{enumerate}
-    \includegraphics[width=\textwidth]{modelrealworld.png}
+    \includegraphics[width=\textwidth]{empty}
     
     \subsection{LMS: Least Mean Squared}
     Ziel: Fitting $y(x)$; Anpassung der weights, sodass Klassifizierungsfehler möglichst gering sind. \\~\\
@@ -126,22 +126,23 @@ Schätze $c(x)$, was implizit durch $D$ mit feature-Value-Muster
 
 \newpage
 \section{Definitionen Text}
- \subsection{Supervised learning} 
+\subsection{Supervised learning} 
     Eine Funktion mithilfe von input-output-Daten lernen; \newline
     automatisierte Klassifikation mit von Menschen bereits klassifizierten Daten als Grundlage \newline
     \textit{Beispiel: optical character recognizition}
     
- \subsection{Unsupervised learning}
+\subsection{Unsupervised learning}
     identifiziert/findet selbstständig Muster und Strukturen in Daten; \newline
     \begin{itemize}
         \item automatisierte Kategorisierung durch Cluster Analysis
         \item Parameter Optimierung durch Expectation Maximation
         \item Feature Extrahierung durch Factor Analysis
     \end{itemize}
-    \textit{Beispiel: }
+    \textit{Beispiel: intrusion detection in a network data stream}
     
- \subsection{Reinforcement learning}
+\subsection{Reinforcement learning}
     "Learn, adapt, or optimize a behavior strategy in order to maximize the ownbenefit by interpreting feedback that is provided by the environment."
+    \textit{Beispiel: program to play tetris}
 
 \subsection{Feature Vektor}
     Ein Feature Vektor ist ein Vektor in dem jede Dimension eine Eigenschaft(Feature) des beschriebenen Objektes enthält.\newline
@@ -154,13 +155,14 @@ Schätze $c(x)$, was implizit durch $D$ mit feature-Value-Muster
     .\\
     x_n
     \end{bmatrix}$
-    \quad Besipiel: \textbf{Gitarre} =
+    \quad Besipiel: \textbf{Gitarre} = 
     $\begin{bmatrix}
-    Marke\\
-    Farbe\\
-    Ressonanzkörper\\
-    Baujahr
+    Farbe: blau\\
+    Baujahr: 1997\\
+    Material: Holz\\
+    Elektrisch: ja\\
     \end{bmatrix}$
+
 
 \subsection{Ground Truth}
 Überprüfung der Klassifizierung eines Lernprozesses auf Richtigkeit für gewolltes Model.\newline
