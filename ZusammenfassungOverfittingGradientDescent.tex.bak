@@ -11,6 +11,161 @@
 \DeclareMathOperator*{\sign}{sign}
 \begin{document}
 \begin{flushleft}
+\section{Begriffe}
+
+\begin{table}[]
+%   \centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Begriff}& \textbf{Erklärung} & \textbf{Beispiel} \\
+        & & \\
+        \hline
+        X & Menge der Feature Vektoren &\\
+        &&\\
+        \textbf{X} & Feature Vektor; &\\
+        &Feature Space&\\
+        &&\\
+        x & Dimension des korrelierenden Vektors &\\
+        &&\\
+        \textbf{w}&Weight-Vektor&\\
+        &&\\
+        $\mathbf{w}^T\mathbf{x}$ && \\
+        &&\\
+        $c(x_{n})$ & Klasse von $x_{n}$  & $c(x_{1}) = "toxic"$\\
+        && $c(x_{2}) = "edible"$\\
+        &&\\
+        $\mathbf{R}$&&\\
+        \hline
+    \end{tabular}
+\end{table}
+
+ \newpage
+ 
+\section{Definition Formel \& Algorithmen}
+
+\subsection{Specification of learning tasks}
+    \textbf{Realworld $\rightarrow$ Modelworld} \newline
+    \begin{enumerate}
+    \item \textbf{Reale Welt:}
+    \end{enumerate}
+    \begin{itemize}
+        \item $O$ - Menge an Objekten
+        \item $C$ - Menge an Klassen
+        \item $\gamma: O \rightarrow C$ - idealer Classifier für $O$
+    \end{itemize}
+    \quad Aufgabe-Klassifizierung:
+    \begin{itemize}
+        \item bestimme von $o \in O$ die Klasse $\gamma(o) \in C$
+    \end{itemize}
+    
+    \begin{enumerate}
+        \setcounter{enumi}{1}
+        \item \textbf{Model Welt}
+    \end{enumerate}
+     \begin{itemize}
+         \item $X$ - Menge von feature Vektoren
+         \item $C$ - Menge von Klassen
+         \item $c: X \rightarrow C$ - idealer Classifier für $X$ \textit{(c ist unbekannt)}
+         \item $ D =$ \{($\textbf{x}_1,c(\textbf{x}_1)),\ \dots\ ,(\textbf{x}_n, c( \textbf{x}_n)) $\} - Menge von Beispielen \textit{(bereits klassifiziert)}
+     \end{itemize}
+    Todo: Schätze $c(\mathbf{x})$, welche implizit durch $D$ gegeben sind, durch
+    \newline \quad Model-Funktion $y(\mathbf{x})$ 
+    \newline\newline
+    Machine Learning: \newline
+    \begin{enumerate}
+        \item Formuliere Model-Function: $y: X \rightarrow C, \mathbf{x} \mapsto y(\mathbf{x})$
+        \item Nutze Statistik, Theorie und Algorithmen aus ML um den fit zwischen $c(\mathbf{x})$ und $y(\mathbf{x})$ zu Maximieren
+    \end{enumerate}
+    \includegraphics[width=\textwidth]{modelrealworld.png}
+    
+    \subsection{LMS: Least Mean Squared}
+    Ziel: Fitting $y(x)$; Anpassung der weights, sodass Klassifizierungsfehler möglichst gering sind. \\~\\
+    Input: $D$ - Trainingsdaten ($\mathbf{x},c(\mathbf{x})$) mit \textbf{x}$\in \textbf{R}^p$ und Zielklasse c(\textbf{x}) 
+    $\eta$ Learning rate, kleine positive Konstante
+    \\~\\
+INKLUDIERE LMS TEIL HIER
+vermutlich aber irrelevant
+
+\subsection{Lineare Regression}
+
+Grundformel für lineare Gerade, mit: \newline
+$y(x)$ - abhängige Variabel
+$x$ - unabhängige Variable
+$w_1$ - Anstieg der Geraden
+$w_0$ - Schnittpunkt der y-Achse
+\begin{equation}
+    y(x)=w_o+w_1\cdot x
+\end{equation}
+Wobei das minimale $w_0$ und $w_1$ sich ergeben aus:
+\begin{equation}
+    w_1=\frac{\sum\limits^{n}_{i=1}(x_i-\overline{x}\cdot(y_i-\overline{y})}{\sum\limits_{i=1}^{n}(x_i-\overline{x}^2}
+\end{equation}
+\begin{equation}
+    w_0=\overline{y}-w_1\cdot\overline{x}
+\end{equation}
+
+\paragraph{Goodness of Modelfit, Regressionserror}
+Residual sum of Squares(RSS). \newline
+Der Residue wird aus der Differenz zwischen (beobachteten) Realwelt-Wert $y_i$ und geschätzten/modelierten Wert $y(\mathbf{x}_i)$
+\begin{equation}
+    RSS(\mathbf{w}) = \sum^{n}_{i=1}(y_i-y(\mathbf{x}_i))^2
+\end{equation}
+
+\paragraph{Higher-Dimensional Feature Space} ML:ll-16
+
+
+\subsection{Concept Learning}
+Setting:\newline
+$X$ - Menge an Feature Vektoren\newline
+$C$ - Ist eine Menge mit zwei Klassen \textit{Beipiel: \{0,1\},\{ja, nein\}} \newline
+$c: X \rightarrow C$ -idealer Klssifizierer für $X$ \newline
+$D=\{(\mathbf{x}_1,´c(\mathbf{x}_1)),\dots,(\mathbf{x}_n,c(\mathbf{x}_n))\} \subseteq X \times C$ - Menge mit Beispielen \newline
+Todo: \newline
+Schätze $c(x)$, was implizit durch $D$ mit feature-Value-Muster
+
+
+\newpage
+\section{Definitionen Text}
+ \subsection{Supervised learning} 
+    Eine Funktion mithilfe von input-output-Daten lernen; \newline
+    automatisierte Klassifikation mit von Menschen bereits klassifizierten Daten als Grundlage \newline
+    \textit{Beispiel: optical character recognizition}
+    
+ \subsection{Unsupervised learning}
+    identifiziert/findet selbstständig Muster und Strukturen in Daten; \newline
+    \begin{itemize}
+        \item automatisierte Kategorisierung durch Cluster Analysis
+        \item Parameter Optimierung durch Expectation Maximation
+        \item Feature Extrahierung durch Factor Analysis
+    \end{itemize}
+    \textit{Beispiel: }
+    
+ \subsection{Reinforcement learning}
+    "Learn, adapt, or optimize a behavior strategy in order to maximize the ownbenefit by interpreting feedback that is provided by the environment."
+
+\subsection{Feature Vektor}
+    Ein Feature Vektor ist ein Vektor in dem jede Dimension eine Eigenschaft(Feature) des beschriebenen Objektes enthält.\newline
+    \textbf{x} =
+    $\begin{bmatrix}
+    x_1\\
+    x_2\\
+    .\\
+    .\\
+    .\\
+    x_n
+    \end{bmatrix}$
+    \quad Besipiel: \textbf{Gitarre} =
+    $\begin{bmatrix}
+    Marke\\
+    Farbe\\
+    Ressonanzkörper\\
+    Baujahr
+    \end{bmatrix}$
+
+\subsection{Ground Truth}
+Überprüfung der Klassifizierung eines Lernprozesses auf Richtigkeit für gewolltes Model.\newline
+\textit{Beispiel: Überprüfung eines Spamfilter nach falsch kategorisierten Mails}
+
 \section{Linear Models}
 \subsection{Overfitting}
 \begin{itemize}
@@ -39,7 +194,8 @@
 	\begin{itemize}
 	\item Early stopping through model selection: nach m schritten überprüfen ob sich $ Err_{fit}$ noch verkleinert und stoppen wenn er sich vergrößert
 	\item Qualität (schlechte Beispiele raus) und / oder Quantität (mehr Daten gleichen Rauschen aus) von D verbessern
-	\item Manually enforcing a higher bias by using a less complex hypothesis space
+	\item Manually enforcing a higher bias by using a less complex hypothesis space alias Removing Features: In this approach, irrelevant features are removed from the dataset.
+This enhances the algorithm’s ability to generalize
 	\item Regularization (WUHU!)
 	\end{itemize}
 \end{itemize}
@@ -97,10 +253,11 @@ sonst ist y(\textbf{x}) = 0
 \begin{itemize}
 \item wenn $w_0 = -\theta$ und $x_0 = 1$(canonical form) 
 \item sonst $ y(\textbf{x}) = 1 \Leftrightarrow (\displaystyle\sum_{j=1}^p w_j x_j - \theta ) \geq 0 $
+\item $ 0 = w_0 + w_1 * x_1 + w_2 * x_2 $ für 2D Fälle
 \end{itemize}
 
 \subsubsection{PT Algorithm}
-\includegraphics{PT}
+\includegraphics[width=\textwidth]{PT}
 \begin{itemize}
 \item If a separating hyperplane between $X_0$ and $X_1$ exists, the PT algorithm will
 converge. If no such hyperplane exists, convergence cannot be guaranteed.
@@ -126,7 +283,7 @@ $$ \Delta\textbf{w} =  \dfrac{ \delta }{\delta w_i} L_2 (\textbf{w}) = \eta \cdo
 $\eta$ = learning rate - a small positiv constant - legen wir selbst fest
 
 \subsubsection{The Batch Gradient Descent (BGD) Algorithm}
-\includegraphics{BGD}
+\includegraphics[width=\textwidth]{BGD}
 \begin{itemize}
 \item wichtig: immer wenn irgendwo $\textbf{w}^T\textbf{x}$ steht haben wir $x_0 = 1$ zu \textbf{x} hinzugefügt
 \item funktionsweise BGD. wir berechnen über die Ableitung in welche Richtung wir müssen und gehen dann einen Schritt der große $\eta$
@@ -139,7 +296,7 @@ $\eta$ = learning rate - a small positiv constant - legen wir selbst fest
 \item für $BGD_\sigma$ wird Zeile 9 zu  \\ $\textbf{w} = \textbf{w} + \Delta \textbf{w} + \eta \cdot 2 \lambda \cdot \binom{0}{\overrightarrow{\textbf{w}}}$
 \end{itemize}
 \subsubsection{The Incremental Gradient Descent IGD Algorithm}
-\includegraphics{IGD}
+\includegraphics[width=\textwidth]{IGD}
 \begin{itemize}
 \item kleinere Schritte als BGD
 \item  can better avoid getting stuck in a local minimum of the loss function then BGD
@@ -169,7 +326,36 @@ following conditions holds:
 \item[2.]  $ \forall \textbf{x} \in X_1: \sum_{j=0}^p w_jx_j \geq 0 $
 \end{itemize}
 
-Problem: viele Probleme sind nicht linear separierbar Linien sind aber eine nice form zu zeichnen. \\
-Lösung: wir zeichnen mehrere Linien! 
+Problem: viele Probleme sind nicht linear separierbar
+Lösung: wir zeichnen mehrere Linien! (nehmen multilayer perceptron)
+\begin{itemize}
+\item The first, second, and third layer of the shown multilayer perceptron are called input, hidden,and output layer respectively
+\item  input units perform no computation but only distribute the values to the next
+layer
+\item Compared to a single perceptron, the multilayer perceptron poses a significantly more
+challenging training (= learning) problem, which requires continuous (and non-linear)
+threshold functions along with sophisticated learning strategies.
+\item a continuous and non-linear threshold function: 
+$$ \sigma(z) = \frac{1}{1+ e^{-z}} \Rightarrow \frac{\delta \sigma (z)}{\delta z} = \sigma(z) \cdot (1- \sigma(z)) $$
+\item und damit: $ y(\textbf{x}) = \sigma (\textbf{w}^T\textbf{x}) = \dfrac{1}{1+e^{-\textbf{w}^T\textbf{x}}} $
+\item eine Alternative zu $\sigma$ ist: \\
+$$ \tanh (z) = \frac{e^z - e^{-z}}{e^z + e^{-z}} = \frac{e^{2z}-1}{e^{2z}+1}$$ 
+\item A “multilayer” perceptron with linear threshold functions can be expressed as a single linear
+function and hence is equivalent to the power of a single perceptron only $\Rightarrow$ Employing a nonlinear is necessary
+\item  Multilayer perceptrons are also called multilayer networks or (artificial) neural network
+\item 
+\end{itemize}
+\includegraphics[width=\textwidth]{MP}
+\subsubsection{Forward propagation}
+The input data is fed in the forward direction through the network. Each hidden layer accepts the input data, processes it as per the activation function and passes to the successive layer
+\includegraphics[width=\textwidth]{forwardProp}
+\textbf{Forward propagation: Batch Mode}
+\includegraphics[width=\textwidth]{forwardPropBatch}
+\subsubsection{Backwards Propagation}
+\includegraphics[width=\textwidth]{BackwardProp}
+\begin{itemize}
+\item $L_2 (\textbf{w})$ usually contains various local minima
+
+\end{itemize}
 \end{flushleft}
 \end{document}
