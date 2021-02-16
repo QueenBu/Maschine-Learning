@@ -4,8 +4,10 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage[normalem]{ulem}
-\useunder{\uline}{\ul}{}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage[margin=1cm]{geometry}
+\usepackage[table]{xcolor}
 \graphicspath{ {./images/} }
 \author{Bianca}
 \DeclareMathOperator*{\argmin}{argmin}
@@ -15,31 +17,34 @@
 \begin{flushleft}
 \section{Begriffe}
 \begin{table}[]
-\begin{tabular}{lllll}
-\textit{O}                                                             & is a set of objects                                                                & Mushrooms                                                                                                            &  &  \\
-\textit{C}                                                             & is a set of classes                                                                & essbar oder nicht                                                                                                    &  &  \\
-\textit{X}                                                             & Set/ Menge der Feature Vektoren                                                    & Vektoren mit den Eigenschaften der Pilze                                                                             &  &  \\
-\textbf{X}                                                             & Feature Vektor; Feature Space; Feature Domain                                      &                                                                                                                      &  &  \\
-\textbf{x}                                                             & one feature vector                                                                 & ein Pilz                                                                                                             &  &  \\
-x                                                                      & single feature                                                                     & ein eigenschaft von einem Pilz (z.B. braun)                                                                          &  &  \\
-\textbf{w}                                                             & Weight-Vektor                                                                      &                                                                                                                      &  &  \\
-\textit{D = \{(x1, c(x1)), … , ((xn, c(xn))\}}                         & classification knowledge alias the example set                                     & schon bestimmte Pilze                                                                                                &  &  \\
-\textit{D = \{(x1, y1), … , ((xn, yn)\}}                               & same but for regression                                                            & Mietpreise von Wohnungen                                                                                             &  &  \\
-$\alpha(o) = x$                                                               & model formation function                                                           & Funktion zur Bestimmung der Pilz-Eigenschaften                                                                       &  &  \\
-y(x) (Ziel y(x) = c(x))                                                & model function/ classifier                                                         & Bestimmung ob essbar anhand der Eigenschaften                                                                        &  &  \\
-\textit{$\gamma(o)$ mit $O \rightarrow C$}                                                & ideal target function / ideal classifier für O                                     & Pilzexperte der Pilze bestimmt                                                                                       &  &  \\
-c(x) mit c: $X \rightarrow C$                                                      & ideal target function/ ideal classifier for X ; indirekt gegeben durch D           & Theoretische Ideale Bestimmung aller Pilze                                                                           &  &  \\
-$h(x), h: X \rightarrow \{0,1\}$                                                   & hypothesis/ model function  to approximate c(x)                                    & wenn es sonnig ist mache ich Sport (Regeln/ Hypothesen  zur classification)                                          &  &  \\
-$y_i$                                                                     & ground truth for $xi \in X $                                                            & der Mietpreis für eine Wohnung                                                                                       &  &  \\
-\textit{H}                                                             & hypothesis space                                                                   & Menge alle möglichen Hypothesen/Regeln                                                                               &  &  \\
-\textit{$VH,D = \{h(x) | h(x) \in H \wedge ( \forall(x, c(x)) \in D : h(x) = c(x)) \}$} & version space : Menge aller möglichen Regeln (h(x)) die sich aus D ableiten lassen & Wenn es sonnig ist gehe ich raus, Wenn es warm ist gehe ich raus, wenn es windig ist und scheint gehe ich raus, etc. &  &  \\
-\textit{\#}                                                            & true error                                                                         & die summe aller falsch klassifizieren x durch Gesamtzahl aller x                                                     &  &  \\
-\textit{$X \in X / C \in C$}                                                 & random variables                                                                   & ein random Pilz bzw. eine random Klasse                                                                              &  &  \\
-$p(x, c) = P(X=x, C=c)$                                                  & the probability of the joint event that $x \in X$ \& x belongs to class $c \in C   $ & die Wahrscheinlichkeit das ein Pilz zu einer bestimmten Klasse gehört                                                &  &  \\
-$\eta$                                                                      & {\ul learning rate}                                                                & a small positiv constant                                                                                             &  &  \\
-                                                                       & p- dimensional direction vector $w \rightarrow = (w1, . . . , wp) T$ &                                                                                                                      &  &  \\
-                                                                       & p + 1)-dimensional hypothesis $w = (w0, w1, . . . , wp) T$ .                         &                                                                                                                      &  &
+{\rowcolors{1}{black!10!}{black!5}
+\begin{tabular}{l p{5cm} l p{7cm} l p{7cm}}
+\textit{O} & is a set of objects  & Mushrooms \\
+\textit{C} & is a set of classes  & essbar oder nicht \\
+$X$ & Set/ Menge der Feature Vektoren & Vektoren mit den Eigenschaften der Pilze                 \\
+\textbf{X}                                                             & Feature Vektor; Feature Space; Feature Domain                                      &                                                                                                                       \\
+\textbf{x}                                                             & one feature vector                                                                 & ein Pilz                                                                                                              \\
+x                                                                      & single feature                                                                     & ein eigenschaft von einem Pilz (z.B. braun)                                                                          \\
+\textbf{w}                                                             & Weight-Vektor                                                                      &                                                                                                                       \\
+$D={(x_1, c(x_1)),…, ((x_n, c(x_n))}$                         & classification knowledge alias the example set                                     & schon bestimmte Pilze                                                                                                 \\
+\textit{D = \{(x1, y1), … , ((xn, yn)\}}                               & same but for regression                                                            & Mietpreise von Wohnungen                                                                                             \\
+$\alpha(o) = x$                                                               & model formation function                                                           & Funktion zur Bestimmung der Pilz-Eigenschaften                                                                       \\
+y(x) (Ziel y(x) = c(x))                                                & model function/ classifier                                                         & Bestimmung ob essbar anhand der Eigenschaften                                                                          \\
+\textit{$\gamma(o)$ mit $O \rightarrow C$}                                                & ideal target function / ideal classifier für O                                     & Pilzexperte der Pilze bestimmt                                                                                         \\
+c(x) mit c: $X \rightarrow C$                                                      & ideal target function/ ideal classifier for X ; indirekt gegeben durch D           & Theoretische Ideale Bestimmung aller Pilze                                                                            \\
+$h(x), h: X \rightarrow \{0,1\}$                                                   & hypothesis/ model function  to approximate c(x)                                    & wenn es sonnig ist mache ich Sport (Regeln/ Hypothesen  zur classification)                                            \\
+$y_i$                                                                     & ground truth for $xi \in X $                                                            & der Mietpreis für eine Wohnung                                                                                       \\
+\textit{H}                                                             & hypothesis space                                                                   & Menge alle möglichen Hypothesen/Regeln                                                                                 \\
+$VH,D = \{h(x) | h(x) \in  H \wedge $ & \multirow{2}{7cm}{version space : Menge aller möglichen Regeln (h(x)) die sich aus D ableiten lassen} & \multirow{2}{7cm} {Wenn es sonnig ist gehe ich raus, Wenn es warm ist gehe ich raus, wenn es windig ist und scheint gehe ich raus, etc.}  \\
+$( \forall(x, c(x)) \in D : h(x) = c(x)) \}$ & &  \\
+\textit{\#}                                                            & true error                                                                         & die summe aller falsch klassifizieren x durch Gesamtzahl aller x                                                       \\
+\textit{$X \in X / C \in C$}                                                 & random variables                                                                   & ein random Pilz bzw. eine random Klasse                                                                              \\
+$p(x, c) = P(X=x, C=c)$                                                  & the probability of the joint event that $x \in X$ \& x belongs to class $c \in C   $ & die Wahrscheinlichkeit das ein Pilz zu einer bestimmten Klasse gehört                                                  \\
+$\eta$                                                                      & {learning rate}                                                                & a small positiv constant                                                                                              \\
+                                                                       & p- dimensional direction vector $w \rightarrow = (w1, . . . , wp) T$ &                                                                                                                       \\
+                                                                       & p + 1)-dimensional hypothesis $w = (w0, w1, . . . , wp) T$                                                                                                                                             & 
 \end{tabular}
+}
 \end{table}
 \section{Definition Formel \& Algorithmen}
 
@@ -76,15 +81,14 @@ $\eta$                                                                      & {\
         \item Formuliere Model-Function: $y: X \rightarrow C, \mathbf{x} \mapsto y(\mathbf{x})$
         \item Nutze Statistik, Theorie und Algorithmen aus ML um den fit zwischen $c(\mathbf{x})$ und $y(\mathbf{x})$ zu Maximieren
     \end{enumerate}
-    \includegraphics[width=\textwidth]{empty}
+    \includegraphics[width=\textwidth]{modelworld}
     
     \subsection{LMS: Least Mean Squared}
     Ziel: Fitting $y(x)$; Anpassung der weights, sodass Klassifizierungsfehler möglichst gering sind. \\~\\
     Input: $D$ - Trainingsdaten ($\mathbf{x},c(\mathbf{x})$) mit \textbf{x}$\in \textbf{R}^p$ und Zielklasse c(\textbf{x}) 
     $\eta$ Learning rate, kleine positive Konstante
     \\~\\
-INKLUDIERE LMS TEIL HIER
-vermutlich aber irrelevant
+\includegraphics[width=\textwidth]{IGD}
 
 \subsection{Lineare Regression}
 
@@ -244,6 +248,7 @@ $$ \hat{y}(\textbf{x}_i) = \mathbf{\hat{w}}^T \textbf{x}_i $$
 Um so höher $\lambda$ um so einfacher ist die Funktion - Regularization archived!
 
 \section{Neural Networks}
+
 \subsection{Perception Learning}
 Idee: Lass mal ein Gehirn programmieren! \\
 Typisches Beispiel: Schrifterkennung 
