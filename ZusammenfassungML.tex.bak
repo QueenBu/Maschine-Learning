@@ -525,6 +525,10 @@ genauso wie Impurity aber
 \item[3.] wird zu:  $ \iota(\lambda p + (1 - \lambda ) p' ) > \lambda \iota (p) + ( 1 - \lambda ) \iota (p'), 0 < \lambda < 1, p \neq p'  $
 \end{itemize}
 
+Wenn $\iota $ eine stricte impurity funktion ist gilt:
+
+$$ \Delta \iota ( D, \{D_1, ..., D_s\} ) \geq 0 $$
+
 \subsubsection{Impurity of an Example Set}
 Impurity of $D = \iota(D) $ :
 
@@ -552,6 +556,46 @@ Er hat in dem Video erklärt warum er hier plötzlich $p_1$ und $p_2$ benutzt st
 \includegraphics[width = \textwidth]{impurity}
 Das Bild erklärt das Rechnen besser als alle Formeln.
 
+\subsection{Entropy}
 
+Let $A$ denote an event and let $P(A)$ denote the occurrence probability of $A$. Then the entropy (self-information, information content) of $A$ is defined as $ - \log _2 (P(A)) $. Let $A$ be an experiment with the exclusive outcomes (events) $A_1, . . . , A_k$. Then the mean information content of $A$, denoted as $H(A)$, is called Shannon entropy or entropy of experiment $A$ and is defined as follows:
+
+$$ H(A) = - \sum_{i=1}^{k} P(A_i) \cdot \log _2 (P(A_i)) $$
+
+The smaller the occurrence probability of an event, the larger is its entropy. An event that is
+certain has zero entropy
+
+\subsubsection{Conditional Entropy}
+
+Let $\mathcal{A}$ be an experiment with the exclusive outcomes (events) $A_1, ... , A_k$, and let $\mathcal{B}$ be another experiment with the outcomes $B_1, ... , B_s$. Then the conditional entropy
+of the combined experiment $ (\mathcal{A} | \mathcal{B} )$ is defined as follows:
+
+$$ H(\mathcal{A} | \mathcal{B} ) = \sum_{j = 1}^s P(B_j)\cdot H(\mathcal{A} | \mathcal{B} _j ) $$
+
+mit: $ H(\mathcal{A} | \mathcal{B} _j ) = - \sum_{i = 1}^k P(A_i | B_j )\cdot \log _2 (P (A_i | B_j ))$
+
+\subsubsection{Information Gain} 
+
+$$  H(\mathcal{A}) - H(\mathcal{A} | \mathcal{B} ) = H(\mathcal{A}) - \sum_{j = 1}^s P(B_j)\cdot H(\mathcal{A} | \mathcal{B} _j ) $$
+
+\begin{itemize}
+\item Information gain is defined as reduction in entropy
+\item In the context of decision trees, experiment $\mathcal{A}$ corresponds to classifying feature vector \textbf{x} with regard to the target concept. A possible question, whose answer will inform us about which
+event $A_i \in \mathcal{A}$ occurred, is the following: “Does \textbf{x} belong to class $c_i$?”
+Likewise, experiment $\mathcal{B}$ corresponds to evaluating feature B of feature vector \textbf{x}. A possible question, whose answer will inform us about which event $B_i \in \mathcal{B} $ occurred, is the following: “Does \textbf{x} have value $b_j$ for feature $B$?”
+\item Since $H(\mathcal{A})$ is constant, the feature that provides the maximum information gain (= the
+maximally informative feature) is given by the minimization of $H(\mathcal{A} | \mathcal{B} )$.
+\end{itemize}
+
+\subsubsection{Impurity Functions Based on Entropy}
+Tippen braucht zu viel Zeit, die Klausur ist morgen, also Screenshots for now:
+
+\includegraphics[width = \textwidth]{impurity}
+\includegraphics[width = \textwidth]{impureEntropy2}
+\includegraphics[width = \textwidth]{impureEntropyk}
+\includegraphics[width = \textwidth]{len}
+
+\subsubsection{Impurity Functions Based on the Gini Index}
+Wurde in der VL nicht besprochen (ist aber in den Folien) ich lass es mal weg. Man findet es \href{ https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity.pdf }{hier} ab Folie 33.
 \end{flushleft}
 \end{document}
