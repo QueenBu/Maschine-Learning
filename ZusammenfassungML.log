@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  17 FEB 2021 10:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  17 FEB 2021 14:27
 entering extended mode
 **./ZusammenfassungML.tex
 (ZusammenfassungML.tex
@@ -317,26 +317,25 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count275
 \l__pdf_internal_box=\box51
-)
-No file ZusammenfassungML.aux.
+) (ZusammenfassungML.aux)
 \openout1 = `ZusammenfassungML.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 (C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pd
 f.mkii
@@ -359,7 +358,7 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-Package hyperref Info: Link coloring OFF on input line 16.
+Package hyperref Info: Link coloring OFF on input line 18.
 
 (C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.st
 y
@@ -375,324 +374,348 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count282
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+LaTeX Info: Redefining \nameref on input line 18.
+ (ZusammenfassungML.out) (ZusammenfassungML.out)
 \@outlinefile=\write3
 \openout3 = `ZusammenfassungML.out'.
 
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 19.
+               Default added (so using `tbp') on input line 21.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
 
 (C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
 
 
 (C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 []|\OT1/cmr/m/n/10.95 is a set of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
 []|\OT1/cmr/m/n/10.95 Set/ Menge
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
 \OT1/cmr/m/n/10.95 der Fea-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 []|\OT1/cmr/m/n/10.95 Feature Vek-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/cmr/m/n/10.95 tor; Fea-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
 []|\OT1/cmr/m/n/10.95 one fea-ture
  []
 
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 29.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 31.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 []|\OT1/cmr/m/n/10.95 classification
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 \OT1/cmr/m/n/10.95 knowl-edge
  []
 
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
-0.
+2.
 (C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
 
-Underfull \hbox (badness 3019) in paragraph at lines 30--30
+Underfull \hbox (badness 3019) in paragraph at lines 32--32
 []|\OT1/cmr/m/n/10.95 same but for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
 []|\OT1/cmr/m/n/10.95 model for-ma-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
 []|\OT1/cmr/m/n/10.95 model func-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
 []|\OT1/cmr/m/n/10.95 ideal tar-get
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
 \OT1/cmr/m/n/10.95 func-tion /
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 33--33
+Underfull \hbox (badness 2790) in paragraph at lines 35--35
 \OT1/cmr/m/n/10.95 ideal clas-si-fier
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
 []|\OT1/cmr/m/n/10.95 ideal tar-get
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
 \OT1/cmr/m/n/10.95 clas-si-fier for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
 \OT1/cmr/m/n/10.95 X ; in-di-rekt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 []|\OT1/cmr/m/n/10.95 hypothesis/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 \OT1/cmr/m/n/10.95 to ap-prox-i-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--36
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 []|\OT1/cmr/m/n/10.95 ground truth
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 []|\OT1/cmr/m/n/10.95 hypothesis
  []
 
 
-Overfull \vbox (54.40004pt too high) detected at line 38
+Overfull \vbox (54.40004pt too high) detected at line 40
  []
 
 
-Overfull \vbox (95.20006pt too high) detected at line 38
+Overfull \vbox (95.20006pt too high) detected at line 40
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
 []|\OT1/cmr/m/n/10.95 random vari-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 \OT1/cmr/m/n/10.95 of the joint
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 \OT1/cmr/m/n/10.95 event that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 \OT1/cmr/m/n/10.95 be-longs to
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 43--43
+Underfull \hbox (badness 6893) in paragraph at lines 45--45
 \OT1/cmr/m/n/10.95 di-rec-tion vec-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
 \OT1/cmr/m/n/10.95 tor $\OML/cmm/m/it/10.95 w \OMS/cmsy/m/n/10.95 !\OT1/cmr/m/n
 /10.95 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
 []|\OT1/cmr/m/n/10.95 p + 1)-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
 \OT1/cmr/m/n/10.95 dimensional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
 \OT1/cmr/m/n/10.95 hy-poth-e-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
 \OT1/cmr/m/n/10.95 sis $\OML/cmm/m/it/10.95 w \OT1/cmr/m/n/10.95 =
  []
 
 
-Overfull \hbox (9.02353pt too wide) in paragraph at lines 44--44
+Overfull \hbox (9.02353pt too wide) in paragraph at lines 46--46
 \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 w\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.9
 5 ; w\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; :::; wp\OT1/cmr/m/n/10.95 )\OML/
 cmm/m/it/10.95 T$| 
  []
 
 
-Overfull \hbox (260.70142pt too wide) in paragraph at lines 21--47
+Overfull \hbox (260.70142pt too wide) in paragraph at lines 23--49
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--47
+Underfull \hbox (badness 10000) in paragraph at lines 23--49
 
  []
 
 
-LaTeX Warning: Float too large for page by 261.99977pt on input line 47.
+LaTeX Warning: Float too large for page by 261.99977pt on input line 49.
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
-<./images//modelworld.jpg, id=3, 317.68687pt x 183.68625pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
+<./images//modelworld.jpg, id=171, 317.68687pt x 183.68625pt>
 File: ./images//modelworld.jpg Graphic file (type jpg)
 <use ./images//modelworld.jpg>
-Package pdftex.def Info: ./images//modelworld.jpg  used on input line 85.
+Package pdftex.def Info: ./images//modelworld.jpg  used on input line 87.
 (pdftex.def)             Requested size: 288.0011pt x 166.5353pt.
 [1
 
 {C:/Users/SutonToch/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
-<./images//IGD.jpg, id=32, 523.20468pt x 234.1247pt>
+<./images//IGD.jpg, id=196, 523.20468pt x 234.1247pt>
 File: ./images//IGD.jpg Graphic file (type jpg)
 <use ./images//IGD.jpg>
-Package pdftex.def Info: ./images//IGD.jpg  used on input line 92.
+Package pdftex.def Info: ./images//IGD.jpg  used on input line 94.
 (pdftex.def)             Requested size: 360.0pt x 161.09607pt.
 
 [3 <./images//modelworld.jpg> <./images//IGD.jpg>]
 
-LaTeX Warning: Command \textasciiacute invalid in math mode on input line 127.
+LaTeX Warning: Command \textasciiacute invalid in math mode on input line 129.
 
 
-LaTeX Warning: Command \textasciiacute invalid in math mode on input line 127.
+LaTeX Warning: Command \textasciiacute invalid in math mode on input line 129.
 
 Missing character: There is no ´ in font cmr10!
 [4] [5] [6] [7]
-<./images//PT.jpg, id=80, 564.60938pt x 197.98969pt>
+<./images//PT.jpg, id=230, 564.60938pt x 197.98969pt>
 File: ./images//PT.jpg Graphic file (type jpg)
 <use ./images//PT.jpg>
-Package pdftex.def Info: ./images//PT.jpg  used on input line 268.
+Package pdftex.def Info: ./images//PT.jpg  used on input line 270.
 (pdftex.def)             Requested size: 360.0pt x 126.24167pt.
  [8 <./images//PT.jpg>]
-<./images//BGD.jpg, id=89, 562.35094pt x 270.25969pt>
+<./images//BGD.jpg, id=235, 562.35094pt x 270.25969pt>
 File: ./images//BGD.jpg Graphic file (type jpg)
 <use ./images//BGD.jpg>
-Package pdftex.def Info: ./images//BGD.jpg  used on input line 294.
+Package pdftex.def Info: ./images//BGD.jpg  used on input line 296.
 (pdftex.def)             Requested size: 360.0pt x 173.01096pt.
  [9 <./images//BGD.jpg>]
 File: ./images//IGD.jpg Graphic file (type jpg)
 <use ./images//IGD.jpg>
-Package pdftex.def Info: ./images//IGD.jpg  used on input line 307.
+Package pdftex.def Info: ./images//IGD.jpg  used on input line 309.
 (pdftex.def)             Requested size: 360.0pt x 161.09607pt.
  [10]
-<./images//MP.jpg, id=103, 639.13782pt x 395.22656pt>
+<./images//MP.jpg, id=244, 639.13782pt x 395.22656pt>
 File: ./images//MP.jpg Graphic file (type jpg)
 <use ./images//MP.jpg>
-Package pdftex.def Info: ./images//MP.jpg  used on input line 356.
+Package pdftex.def Info: ./images//MP.jpg  used on input line 358.
 (pdftex.def)             Requested size: 288.0011pt x 178.09152pt.
  [11]
-<./images//forwardProp.jpg, id=111, 536.75531pt x 406.51875pt>
+<./images//forwardProp.jpg, id=250, 536.75531pt x 406.51875pt>
 File: ./images//forwardProp.jpg Graphic file (type jpg)
 <use ./images//forwardProp.jpg>
-Package pdftex.def Info: ./images//forwardProp.jpg  used on input line 359.
+Package pdftex.def Info: ./images//forwardProp.jpg  used on input line 361.
 (pdftex.def)             Requested size: 288.0011pt x 218.12119pt.
-<./images//forwardPropBatch.jpg, id=112, 642.14906pt x 404.26031pt>
+<./images//forwardPropBatch.jpg, id=251, 642.14906pt x 404.26031pt>
 File: ./images//forwardPropBatch.jpg Graphic file (type jpg)
 <use ./images//forwardPropBatch.jpg>
-Package pdftex.def Info: ./images//forwardPropBatch.jpg  used on input line 361
+Package pdftex.def Info: ./images//forwardPropBatch.jpg  used on input line 363
 .
 (pdftex.def)             Requested size: 288.0011pt x 181.31094pt.
 
 [12 <./images//MP.jpg> <./images//forwardProp.jpg>]
-<./images//BackwardProp.jpg, id=118, 606.76688pt x 409.53pt>
+<./images//BackwardProp.jpg, id=256, 606.76688pt x 409.53pt>
 File: ./images//BackwardProp.jpg Graphic file (type jpg)
 <use ./images//BackwardProp.jpg>
-Package pdftex.def Info: ./images//BackwardProp.jpg  used on input line 363.
+Package pdftex.def Info: ./images//BackwardProp.jpg  used on input line 365.
 (pdftex.def)             Requested size: 288.0011pt x 194.38504pt.
-<./images//MultiIGD.jpg, id=119, 617.30624pt x 350.81062pt>
+<./images//MultiIGD.jpg, id=257, 617.30624pt x 350.81062pt>
 File: ./images//MultiIGD.jpg Graphic file (type jpg)
 <use ./images//MultiIGD.jpg>
-Package pdftex.def Info: ./images//MultiIGD.jpg  used on input line 380.
+Package pdftex.def Info: ./images//MultiIGD.jpg  used on input line 382.
 (pdftex.def)             Requested size: 288.0011pt x 163.67125pt.
  [13 <./images//forwardPropBatch.jpg> <./images//BackwardProp.jpg>] [14 <./imag
 es//MultiIGD.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 425.
+(hyperref)                removing `math shift' on input line 432.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\in' on input line 425.
+(hyperref)                removing `\in' on input line 432.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 425.
+(hyperref)                removing `math shift' on input line 432.
 
-[15] [16] (ZusammenfassungML.aux)
+[15]
+<./images//dTree.jpg, id=273, 574.39594pt x 208.52907pt>
+File: ./images//dTree.jpg Graphic file (type jpg)
+<use ./images//dTree.jpg>
+Package pdftex.def Info: ./images//dTree.jpg  used on input line 454.
+(pdftex.def)             Requested size: 360.0pt x 130.69626pt.
 
-Package rerunfilecheck Warning: File `ZusammenfassungML.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 452--455
+[]  
+ []
 
-Package rerunfilecheck Info: Checksums for `ZusammenfassungML.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  A53BEE4784ACDE1B950B2F8F53397257;2649.
+<./images//construct.jpg, id=274, 335.00156pt x 278.54062pt>
+File: ./images//construct.jpg Graphic file (type jpg)
+<use ./images//construct.jpg>
+Package pdftex.def Info: ./images//construct.jpg  used on input line 461.
+(pdftex.def)             Requested size: 360.0pt x 299.32332pt.
+[16 <./images//dTree.jpg>]
+<./images//classify.jpg, id=282, 403.5075pt x 94.10156pt>
+File: ./images//classify.jpg Graphic file (type jpg)
+<use ./images//classify.jpg>
+Package pdftex.def Info: ./images//classify.jpg  used on input line 472.
+(pdftex.def)             Requested size: 360.0pt x 83.95544pt.
+ [17 <./images//construct.jpg>] [18 <./images//classify.jpg>]
+Overfull \hbox (71.44974pt too wide) detected at line 495
+\OML/cmm/m/it/10.95 Err\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t; D\OT1/cmr/m/n
+/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )) = [] = 1 \OMS/cmsy/m/n/10.95
+   [] []
+ []
+
+[19] (ZusammenfassungML.aux)
+Package rerunfilecheck Info: File `ZusammenfassungML.out' has not changed.
+(rerunfilecheck)             Checksum: B1C57708E2958BE172A69577C05D7989;3081.
  ) 
 Here is how much of TeX's memory you used:
- 7069 strings out of 479618
- 105862 string characters out of 2863126
- 419059 words of memory out of 3000000
- 24052 multiletter control sequences out of 15000+200000
+ 7157 strings out of 479618
+ 107529 string characters out of 2863126
+ 419386 words of memory out of 3000000
+ 24123 multiletter control sequences out of 15000+200000
  410904 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,16n,74p,387b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,16n,74p,406b,513s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\SutonToch\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcrm1095.pk><C:/Users/SutonToch/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmbx10.pfb><C:/Users/SutonToch/AppData/Local/Programs/MiKTeX/font
@@ -712,9 +735,9 @@ tonToch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 cm/cmsy8.pfb><C:/Users/SutonToch/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb><C:/Users/SutonToch/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ZusammenfassungML.pdf (16 pages, 623641 bytes).
+Output written on ZusammenfassungML.pdf (19 pages, 732812 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 371 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 500000)
+ 397 words of extra memory for PDF output out of 10000 (max. 10000000)
 

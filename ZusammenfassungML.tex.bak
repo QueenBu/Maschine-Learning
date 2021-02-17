@@ -495,6 +495,6 @@ Missclassification rate/ Error of node classifier t based on that:
 $$ Err(t,D(t)) = \dfrac{|\{ \x , c( \x ) ) \in D (t) : c( \x ) \neq label(t) \} | }{|D(t)|} = 1 - \max_{c \in C} \dfrac{|\{ \x , c( \x ) ) \in D (t) : c( \x ) = c \} | }{|D(t)|} $$
 Misclassification rate of decision tree classifier T: 
 $$ Err(T,D) = \sum_{t \in leaves(T)} \frac{|D(t)|}{|D|} \cdot Err(t, D(t)) $$
-argmax gibt das $\x $  zurück für das eine Funktion $f(\x )$ maximal ist, max gibt $ y (\x )$ zurück (Beispiel Hauspreise anhand der Lage: $argmax(\x ) =$  "Innenstadt" und $max(\x ) = $ "75000€"
+argmax gibt das $\x $  zurück für das eine Funktion $f(\x )$ maximal ist, max gibt $ y (\x )$ zurück (Beispiel Hauspreise,  
 \end{flushleft}
 \end{document}
