@@ -18,35 +18,10 @@
 \begin{document}
 \begin{flushleft}
 \section{Begriffe}
-\begin{table}[]
-{\rowcolors{1}{black!10!}{black!5}
-\begin{tabular}{l p{0.2\textwidth} l p{0.2\textwidth} l p{0.2\textwidth}}
-$O$ & is a set of objects  & Mushrooms \\
-$C$ & is a set of classes  & essbar oder nicht \\
-$X$ & Set/ Menge der Feature Vektoren & Vektoren mit den Eigenschaften der Pilze                 \\
-\textbf{X}                                                             & Feature Vektor; Feature Space; Feature Domain                                      &                                                                                                                       \\
-\textbf{x}                                                             & one feature vector                                                                 & ein Pilz                                                                                                              \\
-x                                                                      & single feature                                                                     & ein eigenschaft von einem Pilz (z.B. braun)                                                                          \\
-\textbf{w}                                                             & Weight-Vektor                                                                      &                                                                                                                       \\
-$D={(x_1, c(x_1)),…, ((x_n, c(x_n))}$                         & classification knowledge alias the example set                                     & schon bestimmte Pilze                                                                                                 \\
-\textit{D = \{(x1, y1), … , ((xn, yn)\}}                               & same but for regression                                                            & Mietpreise von Wohnungen                                                                                             \\
-$\alpha(o) = x$                                                               & model formation function                                                           & Funktion zur Bestimmung der Pilz-Eigenschaften                                                                       \\
-y(x) (Ziel y(x) = c(x))                                                & model function/ classifier                                                         & Bestimmung ob essbar anhand der Eigenschaften                                                                          \\
-\textit{$\gamma(o)$ mit $O \rightarrow C$}                                                & ideal target function / ideal classifier für O                                     & Pilzexperte der Pilze bestimmt                                                                                         \\
-c(x) mit c: $X \rightarrow C$                                                      & ideal target function/ ideal classifier for X ; indirekt gegeben durch D           & Theoretische Ideale Bestimmung aller Pilze                                                                            \\
-$h(x), h: X \rightarrow \{0,1\}$                                                   & hypothesis/ model function  to approximate c(x)                                    & wenn es sonnig ist mache ich Sport (Regeln/ Hypothesen  zur classification)                                            \\
-$y_i$                                                                     & ground truth for $xi \in X $                                                            & der Mietpreis für eine Wohnung                                                                                       \\
-\textit{H}                                                             & hypothesis space                                                                   & Menge alle möglichen Hypothesen/Regeln                                                                                 \\
-$V_{H,D} = \{h(x) | h(x) \in  H \wedge $ & \multirow{2}{0.2\textwidth}{version space : Menge aller möglichen Regeln (h(x)) die sich aus D ableiten lassen} & \multirow{2}{0.2\textwidth} {Wenn es sonnig ist gehe ich raus, Wenn es warm ist gehe ich raus, wenn es windig ist und scheint gehe ich raus, etc.}  \\
-$( \forall(x, c(x)) \in D : h(x) = c(x)) \}$ & &  \\
-$ \mathcal{X} \in X / \mathcal{C} \in C$ & random variables & ein random Pilz bzw. eine random Klasse                                       \\
-$p(x, c) = P(X=x, C=c)$                                                  & the probability of the joint event that $x \in X$ \& x belongs to class $c \in C   $ & die Wahrscheinlichkeit das ein Pilz zu einer bestimmten Klasse gehört                                                  \\
-$\eta$                                                                      & {learning rate}                                                                & a small positiv constant                                                                                              \\
-                                                                       & p- dimensional direction vector $w \rightarrow = (w1, . . . , wp) T$ &                                                                                                                       \\
-                                                                       & p + 1)-dimensional hypothesis $w = (w0, w1, . . . , wp) T$                                                                                                                                             & 
-\end{tabular}
-}
-\end{table}
+
+ Siehe extra Tabelle (füge ich vllt irgendwann noch ein)
+ 
+ Bis Overfitting hat Ln(a) die Zusammenfassung geschrieben. (Danke dafür) Meine Version ist \href{ https://docs.google.com/document/d/1jQWYKyFCRYTOLqHAkhHsVKfAQX4yOiVxVZzob_jcLQ4/edit?usp=sharing }{hier : Link}.
 \section{Definition Formel \& Algorithmen}
 
 \subsection{Specification of learning tasks}
@@ -639,9 +614,68 @@ Where the inductive bias of the ID3 algorithm becomes manifest:
 \textit{Is this justified?}
 \end{center}
 \subsubsection{CART Algorithm}
-
-
+Characteristics of the CART algorithm: Each splitting is binary and considers one feature at a time and  Splitting criterion is the information gain or the Gini index. 
+\includegraphics[width = \textwidth]{cart}
+\includegraphics[width = \textwidth]{cartTree}
 \subsection{Decision Tree Pruning}
+Most DT- Algos will overfit: Solution we prune!
+\begin{itemize}
+\item Overgrowing is what i call it.
+\item Accuracy is the percentage of correctly classified examples
+\item The training error Err(T, Dtr) of a decision tree T is a monotonically decreasing function in
+the size of T
+\item man könnte auch eher aufhören beim trainieren um overfitting zu vermeiden. Das werden wir nicht.
+\end{itemize}
+\subsubsection{Overfitting (alias Overgrowing) Decision Trees}
+Definition: The hypothesis $h \in H$ is considered to overfit $D$ if an $h' \in H$ with the following property exists:
+$$ Err(h, D) < Err(h', D) \text{ and } Err^*(h) > Err^* (h') $$,
+where $Err^*(h)$ denotes the true missclassification rate of $h$, while $Err(h, D)$ denotes the error of $h$ on the example set $D$. \\
+Reasons for overfitting are often rooted in the example set $D$:
+\begin{itemize}
+ \item D is noisy and we “learn noise”
+ \item D is biased and hence not representative
+ \item D is too small and hence pretends unrealistic data properties
+\end{itemize}
+\subsubsection{stopping instead of pruning}
+\includegraphics[width = \textwidth]{stopping}
+\subsection{Pruning}
+The pruning principle:
+\begin{enumerate}
+\item Construct a sufficiently large decision tree $T_max$.
+\item Prune $T_max$, starting from the leaf nodes upwards to the tree root.
+\end{enumerate}
+Each leaf node $t$ of $T_max$ fulfills one or more of the following conditions:
+\begin{itemize}
+\item $D(t$ is sufficiently small. Typically, $|D(t)| \leq 5$.
+\item $D(t)$ is pure (only one class)
+\item $D(t)$ is comprised of examples with identical feature vectors.
+\end{itemize}
+Given a decision tree $T$ and an inner (non-root, non-leaf) node $t$. Then pruning of $T$
+with regard to $t$ is the deletion of all successor nodes of $t$ in $T$. The pruned tree is
+denoted as $T \backslash T_t$. The node $t$ becomes a leaf node in $T \backslash T_t$
+\includegraphics[width = \textwidth]{pruning}
+
+\subsubsection{Pruning induced ordering}
+Let $T'$ and $T$ be two decision trees. Then $T' \preceq T$ denotes the fact that $T'$ is the
+result of a (possibly repeated) pruning applied to $T$. The relation $\preceq$ forms a partial
+ordering on the set of all trees.\\
+
+Problems when assessing pruning candidates:
+\begin{itemize}
+\item Pruned decision trees may not stand in the $ \preceq $ lation.
+\item Locally optimum pruning decisions may not result in the best candidates
+\item Seine Monotonie disqualifies $Err(T, D_{tr})$ as an estimator for $Err^*(T)$
+\item $\rightarrow $ by making one pruning decision we loose access to the other path
+\end{itemize}
+So we control pruning with validation set $D_{val}$, where $D_{val} \cap D_{tr} = \emptyset $, $D_{val} \cap D_{test} = \emptyset $ :
+\begin{enumerate}
+\item $D_{tr} \subset D $ for decision tree construction
+\item $D_{val} \subset D $ for overfitting analysis during pruning
+\item $D_{test} \subset D $ for decision tree evaluation after pruning
+\end{enumerate}
+
+\subsubsection{Reduced Error Pruning}
+\includegraphics[width = \textwidth]{Errorpruning}
 
 \end{flushleft}
 \end{document}

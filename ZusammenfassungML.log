@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  17 FEB 2021 20:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  17 FEB 2021 22:17
 entering extended mode
 **./ZusammenfassungML.tex
 (ZusammenfassungML.tex
@@ -381,417 +381,253 @@ LaTeX Info: Redefining \nameref on input line 18.
 \@outlinefile=\write3
 \openout3 = `ZusammenfassungML.out'.
 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 21.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
 
 (C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
 
 
 (C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-[]|\OT1/cmr/m/n/10.95 is a set of
- []
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
+0.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-[]|\OT1/cmr/m/n/10.95 Set/ Menge
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-\OT1/cmr/m/n/10.95 der Fea-ture
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
-[]|\OT1/cmr/m/n/10.95 Feature Vek-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
-\OT1/cmr/m/n/10.95 tor; Fea-ture
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
-[]|\OT1/cmr/m/n/10.95 one fea-ture
- []
-
-
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 31.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-[]|\OT1/cmr/m/n/10.95 classification
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\OT1/cmr/m/n/10.95 knowl-edge
- []
-
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
-2.
 (C:\Users\SutonToch\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
-
-Underfull \hbox (badness 3019) in paragraph at lines 32--32
-[]|\OT1/cmr/m/n/10.95 same but for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
-[]|\OT1/cmr/m/n/10.95 model for-ma-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
-[]|\OT1/cmr/m/n/10.95 model func-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
-[]|\OT1/cmr/m/n/10.95 ideal tar-get
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
-\OT1/cmr/m/n/10.95 func-tion /
- []
-
-
-Underfull \hbox (badness 2790) in paragraph at lines 35--35
-\OT1/cmr/m/n/10.95 ideal clas-si-fier
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--36
-[]|\OT1/cmr/m/n/10.95 ideal tar-get
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--36
-\OT1/cmr/m/n/10.95 clas-si-fier for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--36
-\OT1/cmr/m/n/10.95 X ; in-di-rekt
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]|\OT1/cmr/m/n/10.95 hypothesis/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\OT1/cmr/m/n/10.95 to ap-prox-i-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
-[]|\OT1/cmr/m/n/10.95 ground truth
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-[]|\OT1/cmr/m/n/10.95 hypothesis
- []
-
-
-Overfull \vbox (54.40004pt too high) detected at line 40
- []
-
-
-Overfull \vbox (95.20006pt too high) detected at line 40
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
-[]|\OT1/cmr/m/n/10.95 random vari-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
-\OT1/cmr/m/n/10.95 of the joint
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
-\OT1/cmr/m/n/10.95 event that
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
-\OT1/cmr/m/n/10.95 be-longs to
- []
-
-
-Underfull \hbox (badness 6893) in paragraph at lines 45--45
-\OT1/cmr/m/n/10.95 di-rec-tion vec-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
-\OT1/cmr/m/n/10.95 tor $\OML/cmm/m/it/10.95 w \OMS/cmsy/m/n/10.95 !\OT1/cmr/m/n
-/10.95 =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
-[]|\OT1/cmr/m/n/10.95 p + 1)-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
-\OT1/cmr/m/n/10.95 dimensional
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
-\OT1/cmr/m/n/10.95 hy-poth-e-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
-\OT1/cmr/m/n/10.95 sis $\OML/cmm/m/it/10.95 w \OT1/cmr/m/n/10.95 =
- []
-
-
-Overfull \hbox (9.02353pt too wide) in paragraph at lines 46--46
-\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 w\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.9
-5 ; w\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; :::; wp\OT1/cmr/m/n/10.95 )\OML/
-cmm/m/it/10.95 T$| 
- []
-
-
-Overfull \hbox (260.70142pt too wide) in paragraph at lines 23--49
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--49
-
- []
-
-
-LaTeX Warning: Float too large for page by 261.99977pt on input line 49.
-
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
-<./images//modelworld.jpg, id=235, 317.68687pt x 183.68625pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+<./images//modelworld.jpg, id=256, 317.68687pt x 183.68625pt>
 File: ./images//modelworld.jpg Graphic file (type jpg)
 <use ./images//modelworld.jpg>
-Package pdftex.def Info: ./images//modelworld.jpg  used on input line 87.
+Package pdftex.def Info: ./images//modelworld.jpg  used on input line 62.
 (pdftex.def)             Requested size: 288.0011pt x 166.5353pt.
+
 [1
 
-{C:/Users/SutonToch/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
-<./images//IGD.jpg, id=260, 523.20468pt x 234.1247pt>
+{C:/Users/SutonToch/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+<./images//IGD.jpg, id=276, 523.20468pt x 234.1247pt>
 File: ./images//IGD.jpg Graphic file (type jpg)
 <use ./images//IGD.jpg>
-Package pdftex.def Info: ./images//IGD.jpg  used on input line 94.
+Package pdftex.def Info: ./images//IGD.jpg  used on input line 69.
 (pdftex.def)             Requested size: 360.0pt x 161.09607pt.
+ [2 <./images//modelworld.jpg> <./images//IGD.jpg>]
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
 
-[3 <./images//modelworld.jpg> <./images//IGD.jpg>]
 
-LaTeX Warning: Command \textasciiacute invalid in math mode on input line 129.
+LaTeX Warning: Command \textasciiacute invalid in math mode on input line 104.
 
 
-LaTeX Warning: Command \textasciiacute invalid in math mode on input line 129.
+LaTeX Warning: Command \textasciiacute invalid in math mode on input line 104.
 
 Missing character: There is no ´ in font cmr10!
-[4] [5] [6] [7]
-<./images//PT.jpg, id=294, 564.60938pt x 197.98969pt>
+[3] [4] [5] [6]
+<./images//PT.jpg, id=310, 564.60938pt x 197.98969pt>
 File: ./images//PT.jpg Graphic file (type jpg)
 <use ./images//PT.jpg>
-Package pdftex.def Info: ./images//PT.jpg  used on input line 270.
+Package pdftex.def Info: ./images//PT.jpg  used on input line 245.
 (pdftex.def)             Requested size: 360.0pt x 126.24167pt.
- [8 <./images//PT.jpg>]
-<./images//BGD.jpg, id=299, 562.35094pt x 270.25969pt>
+ [7 <./images//PT.jpg>]
+<./images//BGD.jpg, id=316, 562.35094pt x 270.25969pt>
 File: ./images//BGD.jpg Graphic file (type jpg)
 <use ./images//BGD.jpg>
-Package pdftex.def Info: ./images//BGD.jpg  used on input line 296.
+Package pdftex.def Info: ./images//BGD.jpg  used on input line 271.
 (pdftex.def)             Requested size: 360.0pt x 173.01096pt.
- [9 <./images//BGD.jpg>]
+ [8 <./images//BGD.jpg>]
 File: ./images//IGD.jpg Graphic file (type jpg)
 <use ./images//IGD.jpg>
-Package pdftex.def Info: ./images//IGD.jpg  used on input line 309.
+Package pdftex.def Info: ./images//IGD.jpg  used on input line 284.
 (pdftex.def)             Requested size: 360.0pt x 161.09607pt.
- [10]
-<./images//MP.jpg, id=308, 639.13782pt x 395.22656pt>
+ [9]
+<./images//MP.jpg, id=325, 639.13782pt x 395.22656pt>
 File: ./images//MP.jpg Graphic file (type jpg)
 <use ./images//MP.jpg>
-Package pdftex.def Info: ./images//MP.jpg  used on input line 358.
+Package pdftex.def Info: ./images//MP.jpg  used on input line 333.
 (pdftex.def)             Requested size: 288.0011pt x 178.09152pt.
- [11]
-<./images//forwardProp.jpg, id=314, 536.75531pt x 406.51875pt>
+ [10]
+<./images//forwardProp.jpg, id=331, 536.75531pt x 406.51875pt>
 File: ./images//forwardProp.jpg Graphic file (type jpg)
 <use ./images//forwardProp.jpg>
-Package pdftex.def Info: ./images//forwardProp.jpg  used on input line 361.
+Package pdftex.def Info: ./images//forwardProp.jpg  used on input line 336.
 (pdftex.def)             Requested size: 288.0011pt x 218.12119pt.
-<./images//forwardPropBatch.jpg, id=315, 642.14906pt x 404.26031pt>
+<./images//forwardPropBatch.jpg, id=332, 642.14906pt x 404.26031pt>
 File: ./images//forwardPropBatch.jpg Graphic file (type jpg)
 <use ./images//forwardPropBatch.jpg>
-Package pdftex.def Info: ./images//forwardPropBatch.jpg  used on input line 363
+Package pdftex.def Info: ./images//forwardPropBatch.jpg  used on input line 338
 .
 (pdftex.def)             Requested size: 288.0011pt x 181.31094pt.
 
-[12 <./images//MP.jpg> <./images//forwardProp.jpg>]
-<./images//BackwardProp.jpg, id=320, 606.76688pt x 409.53pt>
+[11 <./images//MP.jpg> <./images//forwardProp.jpg>]
+<./images//BackwardProp.jpg, id=337, 606.76688pt x 409.53pt>
 File: ./images//BackwardProp.jpg Graphic file (type jpg)
 <use ./images//BackwardProp.jpg>
-Package pdftex.def Info: ./images//BackwardProp.jpg  used on input line 365.
+Package pdftex.def Info: ./images//BackwardProp.jpg  used on input line 340.
 (pdftex.def)             Requested size: 288.0011pt x 194.38504pt.
-<./images//MultiIGD.jpg, id=321, 617.30624pt x 350.81062pt>
+<./images//MultiIGD.jpg, id=338, 617.30624pt x 350.81062pt>
 File: ./images//MultiIGD.jpg Graphic file (type jpg)
 <use ./images//MultiIGD.jpg>
-Package pdftex.def Info: ./images//MultiIGD.jpg  used on input line 382.
+Package pdftex.def Info: ./images//MultiIGD.jpg  used on input line 357.
 (pdftex.def)             Requested size: 288.0011pt x 163.67125pt.
- [13 <./images//forwardPropBatch.jpg> <./images//BackwardProp.jpg>] [14 <./imag
-es//MultiIGD.jpg>] [15]
+ [12 <./images//forwardPropBatch.jpg> <./images//BackwardProp.jpg>] [13 <./imag
+es//MultiIGD.jpg>] [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 439.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\in' on input line 439.
+(hyperref)                removing `math shift' on input line 414.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 439.
+(hyperref)                removing `\in' on input line 414.
 
-<./images//dTree.jpg, id=340, 574.39594pt x 208.52907pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 414.
+
+<./images//dTree.jpg, id=357, 574.39594pt x 208.52907pt>
 File: ./images//dTree.jpg Graphic file (type jpg)
 <use ./images//dTree.jpg>
-Package pdftex.def Info: ./images//dTree.jpg  used on input line 461.
+Package pdftex.def Info: ./images//dTree.jpg  used on input line 436.
 (pdftex.def)             Requested size: 360.0pt x 130.69626pt.
 
-Overfull \hbox (27.37506pt too wide) in paragraph at lines 459--462
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 434--437
 []  
  []
 
-[16 <./images//dTree.jpg>]
-<./images//construct.jpg, id=348, 335.00156pt x 278.54062pt>
+[15 <./images//dTree.jpg>]
+<./images//construct.jpg, id=365, 335.00156pt x 278.54062pt>
 File: ./images//construct.jpg Graphic file (type jpg)
 <use ./images//construct.jpg>
-Package pdftex.def Info: ./images//construct.jpg  used on input line 468.
+Package pdftex.def Info: ./images//construct.jpg  used on input line 443.
 (pdftex.def)             Requested size: 360.0pt x 299.32332pt.
- [17 <./images//construct.jpg>]
-<./images//classify.jpg, id=353, 403.5075pt x 94.10156pt>
+ [16 <./images//construct.jpg>]
+<./images//classify.jpg, id=370, 403.5075pt x 94.10156pt>
 File: ./images//classify.jpg Graphic file (type jpg)
 <use ./images//classify.jpg>
-Package pdftex.def Info: ./images//classify.jpg  used on input line 479.
+Package pdftex.def Info: ./images//classify.jpg  used on input line 454.
 (pdftex.def)             Requested size: 360.0pt x 83.95544pt.
- [18 <./images//classify.jpg>]
-Overfull \hbox (71.44974pt too wide) detected at line 502
+ [17 <./images//classify.jpg>]
+Overfull \hbox (71.44974pt too wide) detected at line 477
 \OML/cmm/m/it/10.95 Err\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t; D\OT1/cmr/m/n
 /10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )) = [] = 1 \OMS/cmsy/m/n/10.95
    [] []
  []
 
-[19]
-Overfull \hbox (31.8278pt too wide) detected at line 550
+[18]
+Overfull \hbox (31.8278pt too wide) detected at line 525
 \OML/cmm/m/it/10.95 []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 D\OT1/cmr/m/n/10
 .95 ) = 1 \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 max\OMS/cmsy/m/n/10.95 f[]\
 OML/cmm/m/it/10.95 ; []\OMS/cmsy/m/n/10.95 g
  []
 
-<./images//impurity.jpg, id=369, 612.78937pt x 301.8778pt>
+<./images//impurity.jpg, id=385, 612.78937pt x 301.8778pt>
 File: ./images//impurity.jpg Graphic file (type jpg)
 <use ./images//impurity.jpg>
-Package pdftex.def Info: ./images//impurity.jpg  used on input line 556.
+Package pdftex.def Info: ./images//impurity.jpg  used on input line 531.
 (pdftex.def)             Requested size: 360.0pt x 177.34631pt.
-[20] [21 <./images//impurity.jpg>]
-<./images//impureEntropy2.jpg, id=378, 692.5875pt x 207.02344pt>
+[19] [20 <./images//impurity.jpg>]
+<./images//impureEntropy2.jpg, id=395, 692.5875pt x 207.02344pt>
 File: ./images//impureEntropy2.jpg Graphic file (type jpg)
 <use ./images//impureEntropy2.jpg>
-Package pdftex.def Info: ./images//impureEntropy2.jpg  used on input line 593.
+Package pdftex.def Info: ./images//impureEntropy2.jpg  used on input line 568.
 (pdftex.def)             Requested size: 360.0pt x 107.61172pt.
-<./images//impureEntropyk.jpg, id=379, 688.07062pt x 185.94469pt>
+<./images//impureEntropyk.jpg, id=396, 688.07062pt x 185.94469pt>
 File: ./images//impureEntropyk.jpg Graphic file (type jpg)
 <use ./images//impureEntropyk.jpg>
-Package pdftex.def Info: ./images//impureEntropyk.jpg  used on input line 594.
+Package pdftex.def Info: ./images//impureEntropyk.jpg  used on input line 569.
 (pdftex.def)             Requested size: 360.0pt x 97.28477pt.
-<./images//lentropy.jpg, id=380, 570.63188pt x 130.23656pt>
+<./images//lentropy.jpg, id=397, 570.63188pt x 130.23656pt>
 File: ./images//lentropy.jpg Graphic file (type jpg)
 <use ./images//lentropy.jpg>
-Package pdftex.def Info: ./images//lentropy.jpg  used on input line 595.
+Package pdftex.def Info: ./images//lentropy.jpg  used on input line 570.
 (pdftex.def)             Requested size: 360.0pt x 82.16273pt.
-<./images//lentropy2.jpg, id=381, 596.2275pt x 113.67468pt>
+<./images//lentropy2.jpg, id=398, 596.2275pt x 113.67468pt>
 File: ./images//lentropy2.jpg Graphic file (type jpg)
 <use ./images//lentropy2.jpg>
-Package pdftex.def Info: ./images//lentropy2.jpg  used on input line 596.
+Package pdftex.def Info: ./images//lentropy2.jpg  used on input line 571.
 (pdftex.def)             Requested size: 360.0pt x 68.63548pt.
- [22 <./images//impureEntropy2.jpg> <./images//impureEntropyk.jpg> <./images//l
+ [21 <./images//impureEntropy2.jpg> <./images//impureEntropyk.jpg> <./images//l
 entropy.jpg>]
-<./images//ID3Text.jpg, id=387, 572.89032pt x 405.76593pt>
+<./images//ID3Text.jpg, id=404, 572.89032pt x 405.76593pt>
 File: ./images//ID3Text.jpg Graphic file (type jpg)
 <use ./images//ID3Text.jpg>
-Package pdftex.def Info: ./images//ID3Text.jpg  used on input line 609.
+Package pdftex.def Info: ./images//ID3Text.jpg  used on input line 584.
 (pdftex.def)             Requested size: 360.0pt x 254.98378pt.
-<./images//ID3.jpg, id=388, 400.49625pt x 378.66469pt>
+<./images//ID3.jpg, id=405, 400.49625pt x 378.66469pt>
 File: ./images//ID3.jpg Graphic file (type jpg)
 <use ./images//ID3.jpg>
-Package pdftex.def Info: ./images//ID3.jpg  used on input line 610.
+Package pdftex.def Info: ./images//ID3.jpg  used on input line 585.
 (pdftex.def)             Requested size: 360.0pt x 340.39638pt.
- [23 <./images//lentropy2.jpg> <./images//ID3Text.jpg>]
-<./images//Pilze.jpg, id=395, 279.29344pt x 149.8097pt>
+ [22 <./images//lentropy2.jpg> <./images//ID3Text.jpg>]
+<./images//Pilze.jpg, id=412, 279.29344pt x 149.8097pt>
 File: ./images//Pilze.jpg Graphic file (type jpg)
 <use ./images//Pilze.jpg>
-Package pdftex.def Info: ./images//Pilze.jpg  used on input line 619.
+Package pdftex.def Info: ./images//Pilze.jpg  used on input line 594.
 (pdftex.def)             Requested size: 360.0pt x 193.1067pt.
-<./images//ID3Pilze.jpg, id=396, 569.12625pt x 413.29407pt>
+<./images//ID3Pilze.jpg, id=413, 569.12625pt x 413.29407pt>
 File: ./images//ID3Pilze.jpg Graphic file (type jpg)
 <use ./images//ID3Pilze.jpg>
-Package pdftex.def Info: ./images//ID3Pilze.jpg  used on input line 620.
+Package pdftex.def Info: ./images//ID3Pilze.jpg  used on input line 595.
 (pdftex.def)             Requested size: 360.0pt x 261.4424pt.
-<./images//ID3Baum.jpg, id=397, 628.59843pt x 257.46187pt>
+<./images//ID3Baum.jpg, id=414, 628.59843pt x 257.46187pt>
 File: ./images//ID3Baum.jpg Graphic file (type jpg)
 <use ./images//ID3Baum.jpg>
-Package pdftex.def Info: ./images//ID3Baum.jpg  used on input line 621.
+Package pdftex.def Info: ./images//ID3Baum.jpg  used on input line 596.
 (pdftex.def)             Requested size: 360.0pt x 147.4462pt.
- [24 <./images//ID3.jpg>] [25 <./images//Pilze.jpg> <./images//ID3Pilze.jpg>]
-<./images//cart.jpg, id=407, 627.09282pt x 405.76593pt>
+ [23 <./images//ID3.jpg>] [24 <./images//Pilze.jpg> <./images//ID3Pilze.jpg>]
+<./images//cart.jpg, id=423, 627.09282pt x 405.76593pt>
 File: ./images//cart.jpg Graphic file (type jpg)
 <use ./images//cart.jpg>
-Package pdftex.def Info: ./images//cart.jpg  used on input line 643.
+Package pdftex.def Info: ./images//cart.jpg  used on input line 618.
 (pdftex.def)             Requested size: 360.0pt x 232.9483pt.
-<./images//cartTree.jpg, id=408, 609.02531pt x 313.17pt>
+<./images//cartTree.jpg, id=424, 609.02531pt x 313.17pt>
 File: ./images//cartTree.jpg Graphic file (type jpg)
 <use ./images//cartTree.jpg>
-Package pdftex.def Info: ./images//cartTree.jpg  used on input line 644.
+Package pdftex.def Info: ./images//cartTree.jpg  used on input line 619.
 (pdftex.def)             Requested size: 360.0pt x 185.1223pt.
- [26 <./images//ID3Baum.jpg>] [27 <./images//cart.jpg> <./images//cartTree.jpg>
-] (ZusammenfassungML.aux)
+ [25 <./images//ID3Baum.jpg>] [26 <./images//cart.jpg> <./images//cartTree.jpg>
+]
+<./images//stopping.jpg, id=434, 617.30624pt x 394.47375pt>
+File: ./images//stopping.jpg Graphic file (type jpg)
+<use ./images//stopping.jpg>
+Package pdftex.def Info: ./images//stopping.jpg  used on input line 640.
+(pdftex.def)             Requested size: 360.0pt x 230.05293pt.
+ [27 <./images//stopping.jpg>]
+<./images//pruning.jpg, id=441, 587.19376pt x 201.00093pt>
+File: ./images//pruning.jpg Graphic file (type jpg)
+<use ./images//pruning.jpg>
+Package pdftex.def Info: ./images//pruning.jpg  used on input line 656.
+(pdftex.def)             Requested size: 360.0pt x 123.22992pt.
+<./images//Errorpruning.jpg, id=442, 511.15968pt x 191.9672pt>
+File: ./images//Errorpruning.jpg Graphic file (type jpg)
+<use ./images//Errorpruning.jpg>
+Package pdftex.def Info: ./images//Errorpruning.jpg  used on input line 678.
+(pdftex.def)             Requested size: 360.0pt x 135.1992pt.
+ [28 <./images//pruning.jpg>]
+<./images//pruningGraph.jpg, id=450, 392.21532pt x 252.19218pt>
+File: ./images//pruningGraph.jpg Graphic file (type jpg)
+<use ./images//pruningGraph.jpg>
+Package pdftex.def Info: ./images//pruningGraph.jpg  used on input line 682.
+(pdftex.def)             Requested size: 360.0pt x 231.49242pt.
+ [29 <./images//Errorpruning.jpg> <./images//pruningGraph.jpg>]
+(ZusammenfassungML.aux)
 
 Package rerunfilecheck Warning: File `ZusammenfassungML.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `ZusammenfassungML.out':
-(rerunfilecheck)             Before: 7EDA9F2891E85DE1EFFD0DAA11B2A19F;4389
-(rerunfilecheck)             After:  72A95C4212DE319CB7BA4D7A11B1ADD4;4463.
+(rerunfilecheck)             Before: A8BABB5F906E2AA022942B71AC922444;4799
+(rerunfilecheck)             After:  045A33637D45E1792769A4E332ED13A5;4880.
  ) 
 Here is how much of TeX's memory you used:
- 7301 strings out of 479618
- 110220 string characters out of 2863126
- 419393 words of memory out of 3000000
- 24234 multiletter control sequences out of 15000+200000
+ 7347 strings out of 479618
+ 111129 string characters out of 2863126
+ 411404 words of memory out of 3000000
+ 24268 multiletter control sequences out of 15000+200000
  410904 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,16n,74p,441b,498s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -815,9 +651,9 @@ cm/cmsy6.pfb><C:/Users/SutonToch/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmsy8.pfb><C:/Users/SutonToch/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/SutonToch/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ZusammenfassungML.pdf (27 pages, 1294471 bytes).
+Output written on ZusammenfassungML.pdf (29 pages, 1467905 bytes).
 PDF statistics:
- 499 PDF objects out of 1000 (max. 8388607)
- 112 named destinations out of 1000 (max. 500000)
- 585 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 539 PDF objects out of 1000 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
+ 645 words of extra memory for PDF output out of 10000 (max. 10000000)
 

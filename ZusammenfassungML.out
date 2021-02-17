@@ -57,3 +57,8 @@
 \BOOKMARK [3][-]{subsubsection.6.6.3}{ID3 Inductive Bias}{subsection.6.6}% 57
 \BOOKMARK [3][-]{subsubsection.6.6.4}{CART Algorithm}{subsection.6.6}% 58
 \BOOKMARK [2][-]{subsection.6.7}{Decision Tree Pruning}{section.6}% 59
+\BOOKMARK [3][-]{subsubsection.6.7.1}{Overfitting \(alias Overgrowing\) Decision Trees}{subsection.6.7}% 60
+\BOOKMARK [3][-]{subsubsection.6.7.2}{stopping instead of pruning}{subsection.6.7}% 61
+\BOOKMARK [2][-]{subsection.6.8}{Pruning}{section.6}% 62
+\BOOKMARK [3][-]{subsubsection.6.8.1}{Pruning induced ordering}{subsection.6.8}% 63
+\BOOKMARK [3][-]{subsubsection.6.8.2}{Reduced Error Pruning}{subsection.6.8}% 64
