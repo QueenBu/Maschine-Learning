@@ -59,7 +59,7 @@
         \item Formuliere Model-Function: $y: X \rightarrow C, \mathbf{x} \mapsto y(\mathbf{x})$
         \item Nutze Statistik, Theorie und Algorithmen aus ML um den fit zwischen $c(\mathbf{x})$ und $y(\mathbf{x})$ zu Maximieren, sodass $y(\textbf{x} ) \approx c( \textbf{x} ) \approx \gamma (o)$
     \end{enumerate}
-    \includegraphics[width= 0.8\textwidth]{modelworld}
+    \includegraphics[width= \textwidth]{modelworld}
     
     \subsection{LMS: Least Mean Squared}
     Ziel: Fitting $y(x)$; Anpassung der weights, sodass Klassifizierungsfehler möglichst gering sind. \\~\\
@@ -223,7 +223,7 @@ $$ \diag(0,\lambda, ..., \lambda) = \begin{bmatrix}
      
 $$ \hat{y}(\textbf{x}_i) = \mathbf{\hat{w}}^T \textbf{x}_i $$
 
-Um so höher $\lambda$ um so einfacher ist die Funktion - Regularization archived!
+Um so höher $\lambda$ um so einfacher ist die Funktion - Regularization achieved!
 
 \section{Neural Networks}
 
@@ -330,14 +330,14 @@ function and hence is equivalent to the power of a single perceptron only $\Righ
 \item  Multilayer perceptrons are also called multilayer networks or (artificial) neural network
 \item 
 \end{itemize}
-\includegraphics[width=0.8\textwidth]{MP}
+\includegraphics[width= \textwidth]{MP}
 \subsubsection{Forward propagation}
 The input data is fed in the forward direction through the network. Each hidden layer accepts the input data, processes it as per the activation function and passes to the successive layer
-\includegraphics[width=0.8\textwidth]{forwardProp}
+\includegraphics[width= \textwidth]{forwardProp}
 \textbf{Forward propagation: Batch Mode}
-\includegraphics[width=0.8\textwidth]{forwardPropBatch}
+\includegraphics[width= \textwidth]{forwardPropBatch}
 \subsubsection{Backwards Propagation}
-\includegraphics[width=0.8\textwidth]{BackwardProp}
+\includegraphics[width= \textwidth]{BackwardProp}
 \begin{itemize}
 \item $L_2 (\textbf{w})$ usually contains various local minima
 \end{itemize}
@@ -354,7 +354,7 @@ $$ \Delta W^o = - \eta \cdot \nabla ^o L_2(\textbf{w}) = \eta \cdot \displaystyl
 weiß irgendwer was diese lange Formel sagen will? Nein? okay. 
 
 \subsection{IGD for Multilayer Perceptrons}
-\includegraphics[width=0.8\textwidth]{MultiIGD}
+\includegraphics[width= \textwidth]{MultiIGD}
 \begin{itemize}
 \item $\odot = $ \href{https://en.wikipedia.org/wiki/Hadamard_product_(matrices)}{Hadamard product}
 \item $ \otimes  = \textbf{vw}^T $ \href{https://en.wikipedia.org/wiki/Dyadics}{dyadic product}
@@ -680,5 +680,19 @@ So we control pruning with validation set $D_{val}$, where $D_{val} \cap D_{tr} 
 discard valuable information for decision tree construction. \\
 \textbf{Improvement:} rule post pruning
 \includegraphics[width = \textwidth]{pruningGraph}
+
+\section{Statistical Learning}
+\subsection{Probability Basics}
+$$ A \cap B = \emptyset \rightarrow P(A \cup B) = P(A) + P(B) $$
+$$ p(hypothesis | data ) = \dfrac{p(data | hypothesis ) \cdot p(hypothesis)}{p(data)} $$
+$ P(A | B) $ = “probability of $A$ under condition $B$.”
+$$ P(A | B ) = \dfrac{P(A \cap B)}{P(B)} \text{ , if } P(B)> 0 $$
+$$ P(B) = \sum_{i = 1}^k P(A_i) \cdot P(B | A_i) $$ 
+
+$A$ und $B$ are called statistically independent iff: $ P(A \cap B) = P(A) \cdot P(B) $
+
+\subsection{Bayes Classification}
+\includegraphics[width = \textwidth]{Bayes} 
+
 \end{flushleft}
 \end{document}
