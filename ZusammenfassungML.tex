@@ -412,6 +412,13 @@ $$ v \in dom (A): X = \{\textbf{x} \in X: \textbf{x} |_a  \succeq v \} \cup \{\t
 \item $\textbf{x}|a_i$ sind die \textbf{x} die eine eigenschaft $a_i$ erfüllen (z.B. braun)
 \end{itemize}
 
+\subsubsection{Possible criteria for splitting of X(t)}
+\begin{enumerate}
+\item \textbf{Size of D(t)}: $D(t)$ is not split if $|D(t)|$ is below a threshold.
+\item \textbf{Purity of D(t)}: $D(t)$ is not split if all examples in $D(t)$ are members of the same class
+\item \textbf{Impurity reduction of D(t)}: $D(t)$ is not split if its impurity reduction, $\Delta_\iota $, is below a threshold (wenn es sich nicht lohnt weil es sich nicht signifikant verbessert)
+\end{enumerate}
+
 \subsection{Decision Trees Definiton}
 
 Let $X$ be a set of features and $C$ a set of classes. A decision tree $T$ for $X$ and $C$ is
@@ -491,10 +498,60 @@ one of smallest size
 \end{itemize}
 \subsubsection{Classification Error}
 $$ label(t) = \argmax_{c \in C} \dfrac{|(\textbf{x},c(\textbf{x}) \in D(t): c(\textbf{x}) = c)|}{|D(t)|} $$
-Missclassification rate/ Error of node classifier t based on that:
+\textbf{Missclassification rate}/ Error of node classifier t based on that:
 $$ Err(t,D(t)) = \dfrac{|\{ \x , c( \x ) ) \in D (t) : c( \x ) \neq label(t) \} | }{|D(t)|} = 1 - \max_{c \in C} \dfrac{|\{ \x , c( \x ) ) \in D (t) : c( \x ) = c \} | }{|D(t)|} $$
-Misclassification rate of decision tree classifier T: 
+\textbf{Misclassification rate} of decision tree classifier T: 
 $$ Err(T,D) = \sum_{t \in leaves(T)} \frac{|D(t)|}{|D|} \cdot Err(t, D(t)) $$
-argmax gibt das $\x $  zurück für das eine Funktion $f(\x )$ maximal ist, max gibt $ y (\x )$ zurück (Beispiel Hauspreise anhand der Lage: $argmax(\x ) =$  "Innenstadt" und $max(\x ) = $ "75000€"
+argmax gibt das $\x $  zurück für das eine Funktion $f(\x )$ maximal ist, max gibt $ y (\x )$ zurück (Beispiel Wohnungspreise anhand der Lage: $argmax(\x ) =$  "Innenstadt" und $max(\x ) = $ "75000 Euro") (und genauso für argmin vs min) \\
+\textbf{Misclassification cost} of node classifier t:
+$$ Err_{cost}(t,D(t)) = min_{c' \in C} \sum_{c' \in C} \frac{|\{ (\x , c(\x )) \in D(t): c(\x )=c \}|}{|D(t)|} \cdot cost(c' | c) $$
+\textbf{Misclassification costs} of decision tree classifier T:
+$$ Err_{cost}(T,D) = \sum_{t \in leaves(T)} \frac{|D(t)|}{|D|} \cdot Err_{cost}(t, D(t)) $$
+Wenn $c' = c$ ist $cost(c'|c)$ = 0, verschiedene c können verschiedene Kosten haben (es ist schlimmer einen toxischen Pilz als essbar einzustufen als einen essbaren als toxisch)
+
+\subsection{Impurity Functions}
+An impurity function $\iota : [0;1]^k \rightarrow R$ (mit $k \in N $) is a function defined on the standard
+$k-1- simplex$, denoted $\Delta ^{k-1} $, for which the following properties hold:
+\begin{enumerate}
+\item $\iota $ becomes minimum at points (1,0,...,0), (0,1,...,0),..., (0,...,0,1)
+\item $\iota $ is symmetric with regard to its arguments, $p_1, ... , p_k $
+\item $\iota $ becomes maximum at point $(1/k, ..., 1/k)$
+\end{enumerate}
+simplex = einfachste Form zwischen Punkten in k- Dim raum (also k = 3 $\rightarrow$ Dreieck)? \\
+
+\subsubsection{Strict Impurity Function} 
+genauso wie Impurity aber 
+\begin{itemize}
+\item[3] wird zu $ \iota(\lambda p + (1 - \lambda ) p' ) > \lambda \iota (p) + ( 1 - \lambda ) \iota (p'), 0 < \lambda < 1, p \neq p'  $
+\end{itemize}
+
+\subsubsection{Impurity of an Example Set}
+Impurity of $D = \iota(D) $ :
+
+$$ \iota (D) = \iota (\frac{|\{ (\x , c( \x ) ) \in D: c(\x ) = c_1 \}|}{|D|}, ... , \frac{|\{ (\x , c( \x ) ) \in D: c(\x ) = c_k \}|}{|D|} ) $$
+
+eine Funktion ist maximal impure wenn alle ihr zugeordneten Klassen c gleich wahrscheinlich sind (50\% Wahrscheinlichkeit essbar, 50\% Wahrscheinlichkeit toxisch). 
+\subsubsection{Impurity Reduction}
+D aufgeteilt in $D_1, ..., D_s$, durch das splitting von X, dann ist die resulting impurity reduction: 
+
+$$ \Delta \iota (D, \{D_1,..., D_s\}) = \iota (D) - \sum_{j=1}^s \frac{|D-j|}{|D|} \cdot \iota (D_j) $$
+
+\subsubsection{Impurity Functions Based on the misclassification Rate}
+Definition für 2 classes:
+$$ \iota_{misclass} (p_1,p_2) = 1 - max \{p_1,p_2\} = 
+\begin{cases}
+p_1      & \quad \text{if } 0 \leq p_1 \leq 0.5 \\
+1-p_1  & \quad \text{otherwise}
+\end{cases} $$
+$$ \iota_{misclass} (D) = 1 - max \{ \frac{|\{ (\x , c(\x )) \in D: c(\x ) = c_1 \}|}{|D|}, \frac{|\{ (\x , c(\x )) \in D: c(\x ) = c_2 \}|}{|D|}\} $$
+Definition für k classes: 
+$$ \iota_{misclass} (p_1, ... , p_k) = 1 - \max_{i = 1, ..., k} p_i $$
+
+$$ \iota_{misclass} (D) = 1 - \max_{c \in C}  \frac{|\{ (\x , c(\x )) \in D: c(\x ) = c \}|}{|D|} $$
+Er hat in dem Video erklärt warum er hier plötzlich $p_1$ und $p_2$ benutzt statt $c_1$ und $c_2$, hat allerdings nicht so viel Sinn ergeben. 
+\includegraphics[width = \textwidth]{impurity}
+Das Bild erklärt das Rechnen besser als alle Formeln.
+
+
 \end{flushleft}
 \end{document}

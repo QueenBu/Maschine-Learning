@@ -32,11 +32,17 @@
 \BOOKMARK [2][-]{subsection.5.4}{IGD for Multilayer Perceptrons}{section.5}% 32
 \BOOKMARK [1][-]{section.6}{Decision Trees}{}% 33
 \BOOKMARK [2][-]{subsection.6.1}{Splitting}{section.6}% 34
-\BOOKMARK [2][-]{subsection.6.2}{Decision Trees Definiton}{section.6}% 35
-\BOOKMARK [3][-]{subsubsection.6.2.1}{classification of some x X given a decision tree T}{subsection.6.2}% 36
-\BOOKMARK [3][-]{subsubsection.6.2.2}{Notations}{subsection.6.2}% 37
-\BOOKMARK [3][-]{subsubsection.6.2.3}{DT-construct}{subsection.6.2}% 38
-\BOOKMARK [3][-]{subsubsection.6.2.4}{DT-classify}{subsection.6.2}% 39
-\BOOKMARK [2][-]{subsection.6.3}{Evaluation of DT}{section.6}% 40
-\BOOKMARK [3][-]{subsubsection.6.3.1}{measuring Size}{subsection.6.3}% 41
-\BOOKMARK [3][-]{subsubsection.6.3.2}{Classification Error}{subsection.6.3}% 42
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Possible criteria for splitting of X\(t\)}{subsection.6.1}% 35
+\BOOKMARK [2][-]{subsection.6.2}{Decision Trees Definiton}{section.6}% 36
+\BOOKMARK [3][-]{subsubsection.6.2.1}{classification of some x X given a decision tree T}{subsection.6.2}% 37
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Notations}{subsection.6.2}% 38
+\BOOKMARK [3][-]{subsubsection.6.2.3}{DT-construct}{subsection.6.2}% 39
+\BOOKMARK [3][-]{subsubsection.6.2.4}{DT-classify}{subsection.6.2}% 40
+\BOOKMARK [2][-]{subsection.6.3}{Evaluation of DT}{section.6}% 41
+\BOOKMARK [3][-]{subsubsection.6.3.1}{measuring Size}{subsection.6.3}% 42
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Classification Error}{subsection.6.3}% 43
+\BOOKMARK [2][-]{subsection.6.4}{Impurity Functions}{section.6}% 44
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Strict Impurity Function}{subsection.6.4}% 45
+\BOOKMARK [3][-]{subsubsection.6.4.2}{Impurity of an Example Set}{subsection.6.4}% 46
+\BOOKMARK [3][-]{subsubsection.6.4.3}{Impurity Reduction}{subsection.6.4}% 47
+\BOOKMARK [3][-]{subsubsection.6.4.4}{Impurity Functions Based on the misclassification Rate}{subsection.6.4}% 48
