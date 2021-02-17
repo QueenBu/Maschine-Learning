@@ -1,0 +1,36 @@
+\BOOKMARK [1][-]{section.1}{Begriffe}{}% 1
+\BOOKMARK [1][-]{section.2}{Definition Formel \046 Algorithmen}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Specification of learning tasks}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Machine Learning:}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{LMS: Least Mean Squared}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Lineare Regression}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Concept Learning}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Definitionen Text}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Supervised learning}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Unsupervised learning}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Reinforcement learning}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.4}{Feature Vektor}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.5}{Ground Truth}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{Linear Models}{}% 14
+\BOOKMARK [2][-]{subsection.4.1}{Overfitting}{section.4}% 15
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Well- and Ill-posed problems}{subsection.4.1}% 16
+\BOOKMARK [2][-]{subsection.4.2}{Regularization}{section.4}% 17
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Regularized Linear Regression}{subsection.4.2}% 18
+\BOOKMARK [1][-]{section.5}{Neural Networks}{}% 19
+\BOOKMARK [2][-]{subsection.5.1}{Perception Learning}{section.5}% 20
+\BOOKMARK [3][-]{subsubsection.5.1.1}{PT Algorithm}{subsection.5.1}% 21
+\BOOKMARK [2][-]{subsection.5.2}{Gradient Descent}{section.5}% 22
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Linear Regression + Squared Loss}{subsection.5.2}% 23
+\BOOKMARK [3][-]{subsubsection.5.2.2}{The Batch Gradient Descent \(BGD\) Algorithm}{subsection.5.2}% 24
+\BOOKMARK [3][-]{subsubsection.5.2.3}{The Incremental Gradient Descent IGD Algorithm}{subsection.5.2}% 25
+\BOOKMARK [3][-]{subsubsection.5.2.4}{Linear Regression + Squared Loss}{subsection.5.2}% 26
+\BOOKMARK [3][-]{subsubsection.5.2.5}{Logistic Regression + Logistic Loss + Regularization}{subsection.5.2}% 27
+\BOOKMARK [2][-]{subsection.5.3}{Multilayer Perceptron}{section.5}% 28
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Linear Separability}{subsection.5.3}% 29
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Forward propagation}{subsection.5.3}% 30
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Backwards Propagation}{subsection.5.3}% 31
+\BOOKMARK [2][-]{subsection.5.4}{IGD for Multilayer Perceptrons}{section.5}% 32
+\BOOKMARK [1][-]{section.6}{Decision Trees}{}% 33
+\BOOKMARK [2][-]{subsection.6.1}{Splitting}{section.6}% 34
+\BOOKMARK [2][-]{subsection.6.2}{Decision Trees Definiton}{section.6}% 35
+\BOOKMARK [3][-]{subsubsection.6.2.1}{classification of some x X given a decision tree T}{subsection.6.2}% 36

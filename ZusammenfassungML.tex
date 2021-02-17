@@ -4,9 +4,10 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{array}
 \usepackage{multirow}
-\usepackage[margin=1cm]{geometry}
+%\usepackage[margin=1.5 cm]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
 \graphicspath{ {./images/} }
 \author{Bianca}
 \DeclareMathOperator*{\argmin}{argmin}
@@ -16,9 +17,10 @@
 \begin{flushleft}
 \section{Begriffe}
 \begin{table}[]
-\begin{tabular}{l p{5cm} l p{7cm} l p{7cm}}
-\textit{O} & is a set of objects  & Mushrooms \\
-\textit{C} & is a set of classes  & essbar oder nicht \\
+{\rowcolors{1}{black!10!}{black!5}
+\begin{tabular}{l p{0.2\textwidth} l p{0.2\textwidth} l p{0.2\textwidth}}
+$O$ & is a set of objects  & Mushrooms \\
+$C$ & is a set of classes  & essbar oder nicht \\
 $X$ & Set/ Menge der Feature Vektoren & Vektoren mit den Eigenschaften der Pilze                 \\
 \textbf{X}                                                             & Feature Vektor; Feature Space; Feature Domain                                      &                                                                                                                       \\
 \textbf{x}                                                             & one feature vector                                                                 & ein Pilz                                                                                                              \\
@@ -33,15 +35,15 @@ c(x) mit c: $X \rightarrow C$                                                   
 $h(x), h: X \rightarrow \{0,1\}$                                                   & hypothesis/ model function  to approximate c(x)                                    & wenn es sonnig ist mache ich Sport (Regeln/ Hypothesen  zur classification)                                            \\
 $y_i$                                                                     & ground truth for $xi \in X $                                                            & der Mietpreis für eine Wohnung                                                                                       \\
 \textit{H}                                                             & hypothesis space                                                                   & Menge alle möglichen Hypothesen/Regeln                                                                                 \\
-$VH,D = \{h(x) | h(x) \in  H \wedge $ & \multirow{2}{7cm}{version space : Menge aller möglichen Regeln (h(x)) die sich aus D ableiten lassen} & \multirow{2}{7cm} {Wenn es sonnig ist gehe ich raus, Wenn es warm ist gehe ich raus, wenn es windig ist und scheint gehe ich raus, etc.}  \\
+$V_{H,D} = \{h(x) | h(x) \in  H \wedge $ & \multirow{2}{0.2\textwidth}{version space : Menge aller möglichen Regeln (h(x)) die sich aus D ableiten lassen} & \multirow{2}{0.2\textwidth} {Wenn es sonnig ist gehe ich raus, Wenn es warm ist gehe ich raus, wenn es windig ist und scheint gehe ich raus, etc.}  \\
 $( \forall(x, c(x)) \in D : h(x) = c(x)) \}$ & &  \\
-\textit{\#}                                                            & true error                                                                         & die summe aller falsch klassifizieren x durch Gesamtzahl aller x                                                       \\
-\textit{$X \in X / C \in C$}                                                 & random variables                                                                   & ein random Pilz bzw. eine random Klasse                                                                              \\
+$ \mathcal{X} \in X / \mathcal{C} \in C$ & random variables & ein random Pilz bzw. eine random Klasse                                       \\
 $p(x, c) = P(X=x, C=c)$                                                  & the probability of the joint event that $x \in X$ \& x belongs to class $c \in C   $ & die Wahrscheinlichkeit das ein Pilz zu einer bestimmten Klasse gehört                                                  \\
 $\eta$                                                                      & {learning rate}                                                                & a small positiv constant                                                                                              \\
                                                                        & p- dimensional direction vector $w \rightarrow = (w1, . . . , wp) T$ &                                                                                                                       \\
                                                                        & p + 1)-dimensional hypothesis $w = (w0, w1, . . . , wp) T$                                                                                                                                             & 
 \end{tabular}
+}
 \end{table}
 \section{Definition Formel \& Algorithmen}
 
@@ -73,12 +75,14 @@ $\eta$                                                                      & {l
     Todo: Schätze $c(\mathbf{x})$, welche implizit durch $D$ gegeben sind, durch
     \newline \quad Model-Funktion $y(\mathbf{x})$ 
     \newline\newline
-    Machine Learning: \newline
+\subsection{Machine Learning:}
     \begin{enumerate}
+    	\item Collect real-world examples of the form $(o, \gamma (o) ), o \in O $
+    	\item abstract the objects towards feature vectors $ \textbf{x} \in X$, where $\textbf{x} = \alpha (0)$
         \item Formuliere Model-Function: $y: X \rightarrow C, \mathbf{x} \mapsto y(\mathbf{x})$
-        \item Nutze Statistik, Theorie und Algorithmen aus ML um den fit zwischen $c(\mathbf{x})$ und $y(\mathbf{x})$ zu Maximieren
+        \item Nutze Statistik, Theorie und Algorithmen aus ML um den fit zwischen $c(\mathbf{x})$ und $y(\mathbf{x})$ zu Maximieren, sodass $y(\textbf{x} ) \approx c( \textbf{x} ) \approx \gamma (o)$
     \end{enumerate}
-    \includegraphics[width=\textwidth]{modelworld}
+    \includegraphics[width= 0.8\textwidth]{modelworld}
     
     \subsection{LMS: Least Mean Squared}
     Ziel: Fitting $y(x)$; Anpassung der weights, sodass Klassifizierungsfehler möglichst gering sind. \\~\\
@@ -349,17 +353,95 @@ function and hence is equivalent to the power of a single perceptron only $\Righ
 \item  Multilayer perceptrons are also called multilayer networks or (artificial) neural network
 \item 
 \end{itemize}
-\includegraphics[width=\textwidth]{MP}
+\includegraphics[width=0.8\textwidth]{MP}
 \subsubsection{Forward propagation}
 The input data is fed in the forward direction through the network. Each hidden layer accepts the input data, processes it as per the activation function and passes to the successive layer
-\includegraphics[width=\textwidth]{forwardProp}
+\includegraphics[width=0.8\textwidth]{forwardProp}
 \textbf{Forward propagation: Batch Mode}
-\includegraphics[width=\textwidth]{forwardPropBatch}
+\includegraphics[width=0.8\textwidth]{forwardPropBatch}
 \subsubsection{Backwards Propagation}
-\includegraphics[width=\textwidth]{BackwardProp}
+\includegraphics[width=0.8\textwidth]{BackwardProp}
 \begin{itemize}
 \item $L_2 (\textbf{w})$ usually contains various local minima
+\end{itemize}
+$$ \begin{bmatrix}
+\dfrac{\delta L_2 (\textbf{w})}{\delta w^o_{10}} & \cdots & \dfrac{\delta L_2 (\textbf{w})}{\delta w^o_{1l}} \\
+ & \vdots & \\
+\dfrac{\delta L_2 (\textbf{w})}{\delta w^o_{k0}} & \cdots &  \dfrac{\delta L_2 (\textbf{w})}{\delta w^o_{kl}}
+ \end{bmatrix} \equiv \nabla ^o L_2(\textbf{w}) $$
+
+die selbe Formel gibt es nochmal nur mit "h" statt "o" \\
+Update of weight matrix $W^o$: $W^o = W^o + \delta W^o $ mit: 
+$$ \Delta W^o = - \eta \cdot \nabla ^o L_2(\textbf{w}) = \eta \cdot \displaystyle\sum_D  [(W^{oT} \delta ^o) \odot y^h (\textbf{x}) \odot (1 - y^h (\textbf{x}) )]_{1,...,l} \otimes \textbf{x} $$
+
+weiß irgendwer was diese lange Formel sagen will? Nein? okay. 
+
+\subsection{IGD for Multilayer Perceptrons}
+\includegraphics[width=0.8\textwidth]{MultiIGD}
+\begin{itemize}
+\item $\odot = $ \href{https://en.wikipedia.org/wiki/Hadamard_product_(matrices)}{Hadamard product}
+\item $ \otimes  = \textbf{vw}^T $ \href{https://en.wikipedia.org/wiki/Dyadics}{dyadic product}
+\end{itemize}
+another formel for $ \nabla^o L_2 (\textbf{w})$: 
+
+$$ \frac{\delta}{\delta w^o _ {ij}} = - \sum_D (c_i (\textbf{x}) - y_i(\textbf{x})) \cdot y_i(\textbf{x}) \cdot (1- y_i (\textbf{x})) \cdot y_j^h(\textbf{x}) $$ 
+
+\section{Decision Trees}
+\subsection{Splitting}
+
+Das splitting von $X$ ist die Teilung in mutually exclusive Teilmengen $X_1, . . . , X_s$ alias $X = X_1 \cup ... \cup X_s$ mit $X_j \neq \emptyset$ and $X_j \cap X_j \neq \emptyset$, where $j, j' \in \{1, . . . , s\}, j \neq j'$.
+Eine Teilung $X_1, ... , X_s$ von $X$ induces eine Teilung $D_1, . . . , D_s$ von $D$, bei der $D_j, j = 1, ... , s,$ als $\{(\textbf{x}, c(\textbf{x})) \in D | x \in X_j\}$ definiert wird. \\
+Oder in Beispielen: Wir teilen unsere Pilze in 2 (oder mehr) Haufen anhand einer Eigenschaft, z.B. Farbe. Statt also einem Haufen beschrifteter Pilze (unser Beispieldatenset D) haben wir 3 Haufen: weiße Pilze, braune Pilze und rote Pilze. (die wiederum weiter aufgeteilt werden bis wir für jeden Haufen klar sagen können: essbar oder nicht essbar)\\
+
+Die Teilung hängt von der Art der Eigenschaften/ Features ab. Diese können
+\begin{itemize}
+\item numerisch/ quantitative sein: Zahlen und Ratios, z.B. die Temperatur in °C, das Alter in Jahren oder Geld in Währung (Rechnen mit + \& - und/oder * \& / ergibt Sinn)
+\item kategorisch/ Qualitative sein: Namen, Farben, IDs, Postleitzahlen, Hausnummern, etc. (nur Vergleichen [=, $\neq$ bzw. manchmal noch $<$ \& $>$] ergibt Sinn)
+\end{itemize}
+
+Daraus folgen verschiedene Teilmöglichkeiten:
+\begin{itemize}
+\item $m$-ary splitting induced by a (nominal) feature $A$ with finite domain (braune, weiße und rote Pilze):
+$$A = \{a_1,...a_m\}: X = \{\textbf{x} \in X: \textbf{x}|_a = a_1 \} \cup ... \cup \{\textbf{x} \in X: \textbf{x}|_a = a_m \} $$
+\item Binary splitting induced by a (nominal) feature A (Punkte vs keine Punkte):
+$$ A' \subset A : X = \{\textbf{x} \in X: \textbf{x}|_a \in A' \} \cup \{\textbf{x} \in X: \textbf{x}|_a  \notin A' \} $$
+\item Binary splitting induced by an ordinal feature A (Temp <25 °C und Temp >25°C): 
+$$ v \in dom (A): X = \{\textbf{x} \in X: \textbf{x} |_a  \succeq v \} \cup \{\textbf{x} \in X: \textbf{x}|_a \prec  v \} $$
+\item $\textbf{x}|a_i$ sind die \textbf{x} die eine eigenschaft $a_i$ erfüllen (z.B. braun)
+\end{itemize}
+
+\subsection{Decision Trees Definiton}
+
+Let $X$ be a set of features and $C$ a set of classes. A decision tree $T$ for $X$ and $C$ is
+a finite tree with a distinguished root node. A non-leaf node $t$ of $T$ has assigned
+\begin{itemize}
+\item[1] a set $X(t) \subset X$,
+\item[2] a splitting of $X(t)$, and
+\item[3] a one-to-one mapping of the
+subsets of the splitting to its successors.
+\end{itemize}
+$X(t) = X$ iff $t$ is root node. A leaf node of $T$ has assigned a class from $C$.
+
+\subsubsection{classification of some $\textbf{x} \in X$ given a decision tree T}
+\begin{enumerate}
+\item Find the root node $t$ of $T$
+\item if $t$ is a non-leaf node, find among its successors that node $t'$ whose subset of
+the splitting of $X(t)$ contains $\textbf{x}$. Repeat this step with $t = t'$
+\item If $t$ is a leaf node, label $x$ with the respective class
+\end{enumerate}
+
+\textbf{The set of possible decision trees forms the hypothesis space $H$}
+\begin{itemize}
+\item The classification of an $x \in X$ determines a unique path from the root node of $T$ to some leaf
+node of $T$
+\item At each non-leaf node a particular feature of $x$ is evaluated in order to find the next node
+along with a possible next feature to be analyzed
 
 \end{itemize}
+
+
+
+
+
 \end{flushleft}
 \end{document}
