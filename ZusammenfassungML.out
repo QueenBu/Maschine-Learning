@@ -51,3 +51,9 @@
 \BOOKMARK [3][-]{subsubsection.6.5.2}{Information Gain}{subsection.6.5}% 51
 \BOOKMARK [3][-]{subsubsection.6.5.3}{Impurity Functions Based on Entropy}{subsection.6.5}% 52
 \BOOKMARK [3][-]{subsubsection.6.5.4}{Impurity Functions Based on the Gini Index}{subsection.6.5}% 53
+\BOOKMARK [2][-]{subsection.6.6}{Decision Tree Algorithms}{section.6}% 54
+\BOOKMARK [3][-]{subsubsection.6.6.1}{ID3 Algorithm}{subsection.6.6}% 55
+\BOOKMARK [3][-]{subsubsection.6.6.2}{ID3 Beispiel}{subsection.6.6}% 56
+\BOOKMARK [3][-]{subsubsection.6.6.3}{ID3 Inductive Bias}{subsection.6.6}% 57
+\BOOKMARK [3][-]{subsubsection.6.6.4}{CART Algorithm}{subsection.6.6}% 58
+\BOOKMARK [2][-]{subsection.6.7}{Decision Tree Pruning}{section.6}% 59

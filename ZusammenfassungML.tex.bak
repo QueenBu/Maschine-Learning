@@ -590,12 +590,58 @@ maximally informative feature) is given by the minimization of $H(\mathcal{A} | 
 \subsubsection{Impurity Functions Based on Entropy}
 Tippen braucht zu viel Zeit, die Klausur ist morgen, also Screenshots for now:
 
-\includegraphics[width = \textwidth]{impurity}
 \includegraphics[width = \textwidth]{impureEntropy2}
 \includegraphics[width = \textwidth]{impureEntropyk}
-\includegraphics[width = \textwidth]{len}
+\includegraphics[width = \textwidth]{lentropy}
+\includegraphics[width = \textwidth]{lentropy2}
 
 \subsubsection{Impurity Functions Based on the Gini Index}
-Wurde in der VL nicht besprochen (ist aber in den Folien) ich lass es mal weg. Man findet es \href{ https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity.pdf }{hier} ab Folie 33.
+Wurde in der VL nicht besprochen (ist aber in den Folien) ich lass es mal weg. Man findet es \href{ https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity.pdf }{hier (ich bin ein Link)} ab Folie 33.
+
+\subsection{Decision Tree Algorithms}
+\subsubsection{ID3 Algorithm}
+Characteristics of the ID3 algorithm:
+\begin{enumerate}
+\item Each splitting is based on one nominal feature and considers its complete
+domain. Splitting für Feature A: $A = \{a_1,...a_m\}: X = \{\textbf{x} \in X: \textbf{x}|_a = a_1 \} \cup ... \cup \{\textbf{x} \in X: \textbf{x}|_a = a_m \} $
+\item Splitting criterion is information gain.
+\end{enumerate}
+\includegraphics[width = \textwidth]{ID3Text}
+\includegraphics[width = \textwidth]{ID3}
+\begin{itemize}
+\item Step 3 of of the ID3 algorithm checks the purity of D and, given this case, assigns the unique
+class c, ($c \in  dom(Target)$), as label to the respective node.
+\item The smaller $H(C | feature)$ is, the larger becomes the information gain. Hence, the difference
+$H(C) - H(C | feature)$ needs not to be computed since $H(C)$ is constant within each recursion step.
+\end{itemize}
+
+\subsubsection{ID3 Beispiel}
+\includegraphics[width = \textwidth]{Pilze}
+\includegraphics[width = \textwidth]{ID3Pilze}
+\includegraphics[width = \textwidth]{ID3Baum}
+
+\subsubsection{ID3 Inductive Bias}
+Inductive bias is the rigidity in applying the (little bit of) knowledge learned from a
+training set for the classification of unseen feature vectors.
+Observations:
+\begin{itemize}
+\item Decision tree search happens in the space of all hypotheses. $\rightarrow$ The target concept is a member of the hypothesis space.
+\item To generate a decision tree, the ID3 algorithm needs per branch at most as
+many decisions as features are given. $\rightarrow$ no backtracking takes place and the decision tree is a result of local optimization
+\end{itemize}
+ 
+Where the inductive bias of the ID3 algorithm becomes manifest:
+\begin{itemize}
+\item Small decision trees are preferred
+\item Highly discriminative features tend to be closer to the root.
+\end{itemize}
+\begin{center}
+\textit{Is this justified?}
+\end{center}
+\subsubsection{CART Algorithm}
+
+
+\subsection{Decision Tree Pruning}
+
 \end{flushleft}
 \end{document}
