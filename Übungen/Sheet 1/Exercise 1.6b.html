@@ -1,0 +1,434 @@
+from html.parser import HTMLParser
+from urllib.parse import urlparse
+import nltk
+
+# The nltk module needs to be installed for the features noun count, verb count, adjective count. (see nltk.org)
+# The feature extraction functions have been tested on the following html string
+
+test_html = """
+<!doctype html>
+<html lang="en">
+    <head>
+        <?proc color='red'>
+        <meta charset="UTF-8"/>
+        <title>Example document</title>
+    </head>
+    <body>
+        <!-- This is a comment of 32 chars. -->
+        <p>
+            <a href="https://www.google.com/">absolute link</a>
+            <a href="https://www.codewars.com">another absolute link</a>
+            <a href="html_images.asp">relative link</a>
+            <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+        </p>
+        <ol>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ol>
+        Hello, this is the relatively simple example document.
+    </body>
+</html>
+"""
+
+# downloads a dictionary of the english language classifying words into verbs, adjectives etc.
+nltk.download('averaged_perceptron_tagger')
+
+# the tag names that hint that an external resource was used
+external_resource_tags = ["img",
+                          "embed",
+                          "object",
+                          "link",
+                          "script",
+                          "audio",
+                          "video",
+                          "style"]
+
+
+class Tag:
+    """
+    This class should store information about an html tag, but can also represent data between html tags, a list,
+    a list item etc. In case of data the name should represent the text content
+    """
+    def __init__(self, name, depth, parent, attrs=None, is_decl=False, is_pi=False, is_end_tag=False):
+        # attrs is list of (attrName, attrVal) tuples
+        if attrs is None:
+            attrs = []
+        self.name = name
+        self.depth = depth
+        self.parent = parent
+        self.attrs = attrs
+        self.is_decl = is_decl
+        self.is_pi = is_pi  # processing instruction
+        self.is_end_tag = is_end_tag
+        self.is_inline_style = self.parent is not None and self.parent.name == "style"
+        # lists
+        self.is_ordered_list = not self.is_end_tag and self.name == "ol"
+        self.is_unordered_list = not self.is_end_tag and self.name == "ul"
+        self.is_description_list = not self.is_end_tag and self.name == "dl"
+        self.is_list = self.is_ordered_list or self.is_unordered_list or self.is_description_list
+        self.is_list_item = not self.is_end_tag and self.parent is not None and self.parent.is_list
+        if self.is_list_item:
+            self.parent.items.append(self)
+        self.items = [] if self.is_list else None
+
+    def __str__(self):
+        return self.name + ' ' + ', '.join(self.attrs)
+
+    def get_link(self):
+        """
+        Returns url if it is a link, or None if it is not
+        """
+        if self.parent is not None and self.parent.name == 'a' and self.parent.attrs != []:
+            attrsDict = dict(self.parent.attrs)
+            url = attrsDict["href"]
+            return url
+        return None
+
+
+class FeatExtractParser(HTMLParser):
+    """
+    HTML Parser that stores relevant information about the fed html string
+    """
+    def error(self, message):
+        raise (RuntimeError(message))
+
+    def __init__(self, convert_charrefs=True):
+        super().__init__(convert_charrefs=convert_charrefs)
+        self.comments = []  # list of tuples a la (comment, depth, parent)
+        self.max_depth = 0
+        self.__current_depth = 0
+        self.__parent = None
+        # the following attributes will be lists of Tag objects
+        self.start_tags = []
+        self.end_tags = []
+        self.start_end_tags = []
+        self.decl_tags = []
+        self.meta_tags = []
+        self.processing_instructions = []
+        self.text_contents = []
+        self.relative_links = []
+        self.absolute_links = []
+        self.lists = []
+
+    def handle_starttag(self, name, attrs):
+        tag = Tag(name, self.__current_depth, self.__parent, attrs)
+        self.start_tags.append(tag)
+        if tag.is_list:
+            self.lists.append(tag)
+        if tag.name not in external_resource_tags:
+            self.__current_depth += 1
+        self.__parent = tag
+        self.max_depth = max(self.max_depth, self.__current_depth)
+
+    def handle_endtag(self, name):
+        self.__current_depth -= 1
+        self.__parent = self.__parent.parent
+        tag = Tag(name, self.__current_depth, self.__parent, is_end_tag=True)
+        self.end_tags.append(tag)
+
+    def handle_startendtag(self, name, attrs):
+        tag = Tag(name, self.__current_depth, self.__parent, attrs)
+        if name == "meta":
+            self.meta_tags.append(tag)
+        else:
+            self.start_end_tags.append(tag)
+
+    def handle_decl(self, decl):
+        tag = Tag(decl, self.__current_depth, self.__parent, is_decl=True)
+        self.decl_tags.append(tag)
+
+    def handle_pi(self, data):
+        tag = Tag(data, self.__current_depth, self.__parent, is_pi=True)
+        self.processing_instructions.append(tag)
+
+    def handle_data(self, data):
+        if data.isspace():
+            return
+        tag = Tag(data, self.__current_depth, self.__parent)
+        self.text_contents.append(tag)
+        url = tag.get_link()
+        if url is not None:
+            if isAbsolute(url):
+                self.absolute_links.append(tag)
+            else:
+                self.relative_links.append(tag)
+
+    def handle_comment(self, data):
+        self.comments.append((data, self.__current_depth))
+
+    def getAllTags(self):
+        return self.start_tags + \
+               self.end_tags + \
+               self.start_end_tags + \
+               self.meta_tags + \
+               self.decl_tags + \
+               self.processing_instructions
+
+    def getAllTextContentAsWordList(self):
+        return ' '.join([data.name for data in self.text_contents]).split()
+
+
+def feature_rawLength(html):
+    """
+    Returns the raw text length of the html string.
+    """
+    return len(html)
+
+
+def feature_totalTagCount(html):
+    """
+    Returns the number of html tags in the html string, including meta tags, declaration tags or processing instructions
+    """
+    return feature_tagCount(html) + feature_declTagCount(html) + feature_metaTagCount(html) + feature_piCount(html)
+
+
+def feature_tagCount(html):
+    """
+    Returns the number of html tags in the html string. No meta tags, declaration tags or processing instructions
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len(fep.start_tags) + len(fep.end_tags) + len(fep.start_end_tags)
+
+
+def feature_piCount(html):
+    """
+    Returns the number of processing instructions in the html string, e.g. <?proc color='red'>
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len(fep.processing_instructions)
+
+
+def feature_relativeLinkCount(html):
+    """
+    Returns the number of relative links in the html string
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len(fep.relative_links)
+
+
+def feature_absoluteLinkCount(html):
+    """
+    Returns the number of absolute links in the html string
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len(fep.absolute_links)
+
+
+def feature_declTagCount(html):
+    """
+    Returns the number of declaration tags in the html string, e.g. <!doctype html>
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len(fep.decl_tags)
+
+
+def feature_metaTagCount(html):
+    """
+    Returns the number of meta tags in the html string
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len(fep.meta_tags)
+
+
+def feature_commentCount(html):
+    """
+    Returns the number of comments in the html string
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len(fep.comments)
+
+
+def feature_maxDepth(html):
+    """
+    Returns the maximum depth of the tags in the html string
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return fep.max_depth
+
+
+def feature_avgDepth(html, *tagNames):
+    """
+    Returns the average depth of tags in the html string. If no tag names specified, apply on all tags.
+    @param tagNames: the tag names to include
+    @type tagNames: str
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    depths = [tag.depth for tag in fep.getAllTags() if tagNames == () or tag.name in tagNames]
+    return None if len(depths) == 0 else sum(depths) / len(depths)
+
+
+def feature_avgTextContentLength(html):
+    """
+    Returns the average length of data strings in the html string or None if no data strings exist.
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    data_lengths = [len(tag) for tag in fep.text_contents]
+    return None if len(data_lengths) == 0 else sum(data_lengths) / len(data_lengths)
+
+
+def feature_maxTextContentLength(html):
+    """
+    Returns the maximum length of data strings in the html string or None if no data strings exist.
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    data_lengths = [len(tag) for tag in fep.text_contents]
+    return None if len(data_lengths) == 0 else max(data_lengths)
+
+
+def feature_totalTextContentLength(html):
+    """
+    Returns the total number of text content characters in the html string
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    data_lengths = [len(tag) for tag in fep.text_contents]
+    return 0 if len(data_lengths) == 0 else sum(data_lengths)
+
+
+def feature_avgInlineStyleLength(html):
+    """
+    Returns average length of inline styles in the html string or None if no inline styles exist.
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    inline_style_lengths = [len(tag) for tag in fep.getAllTags() if tag.is_inline_style]
+    return None if len(inline_style_lengths) == 0 else sum(inline_style_lengths) / len(inline_style_lengths)
+
+
+def feature_totalInlineStyleLength(html):
+    """
+    Returns total length of inline styles in the html string.
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    inline_style_lengths = [len(tag) for tag in fep.getAllTags() if tag.is_inline_style]
+    return 0 if len(inline_style_lengths) == 0 else sum(inline_style_lengths)
+
+
+def feature_externalResourcesCount(html):
+    """
+    Returns number of external resources in the html string
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len([tag for tag in fep.getAllTags() if tag.name in external_resource_tags])
+
+
+def feature_totalListCount(html):
+    """
+    Returns the total number of lists in the html string.
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len(fep.lists)
+
+
+def feature_orderedListCount(html):
+    """
+    Returns the total number of ordered lists in the html string.
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len([ol for ol in fep.lists if ol.is_ordered_list])
+
+
+def feature_unorderedListCount(html):
+    """
+    Returns the total number of unordered lists in the html string.
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len([ul for ul in fep.lists if ul.is_unordered_list])
+
+
+def feature_descListCount(html):
+    """
+    Returns the total number of description lists in the html string.
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len([dl for dl in fep.lists if dl.is_description_list])
+
+
+def feature_avgListElementCount(html):
+    """
+    Returns average number of elements per list in the html string or None if no lists exist.
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    list_lengths = [len(ls.items) for ls in fep.lists]
+    return None if len(list_lengths) == 0 else sum(list_lengths) / len(list_lengths)
+
+
+def feature_maxListElementCount(html):
+    """
+    Returns maximum number of elements per list in the html string or None if no lists exist.
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    list_lengths = [len(ls.items) for ls in fep.lists]
+    return None if len(list_lengths) == 0 else max(list_lengths)
+
+
+def feature_nounCount(html):
+    """
+    Returns the total number of nouns in the text content of the html string
+    """
+    # Counting nouns or verbs is often vague because many words (e.g. "love") can be nouns or verbs depending on context
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len([pos_tag for pos_tag in nltk.pos_tag(fep.getAllTextContentAsWordList()) if pos_tag[1][:2] == "NN"])
+
+
+def feature_verbCount(html):
+    """
+    Returns the total number of verbs in the text content of the html string
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len([pos_tag for pos_tag in nltk.pos_tag(fep.getAllTextContentAsWordList()) if pos_tag[1][:2] == "VB"])
+
+
+def feature_adjectiveCount(html):
+    """
+    Returns the total number of adjectives and adverbs in the text content of the html string
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    return len([pos_tag for pos_tag in nltk.pos_tag(fep.getAllTextContentAsWordList()) if pos_tag[1][:2] in ["JJ", "RB"]])
+
+
+def feature_avgCommentLength(html):
+    """
+    Returns the average length of comments in the html string or None if no comments exist
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    com_lengths = [len(comment[0]) for comment in fep.comments]
+    return None if len(com_lengths) == 0 else sum(com_lengths) / len(com_lengths)
+
+
+def feature_avgCommentDepth(html):
+    """
+    Returns the average depth of comments in the html string or None if no comments exist
+    """
+    fep = FeatExtractParser()
+    fep.feed(html)
+    com_depths = [comment[1] for comment in fep.comments]
+    return None if len(com_depths) == 0 else sum(com_depths) / len(com_depths)
+
+
+def isAbsolute(url):
+    return bool(urlparse(url).netloc)
