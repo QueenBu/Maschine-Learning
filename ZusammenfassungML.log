@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.13)  1 AUG 2021 11:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.13)  1 AUG 2021 17:46
 entering extended mode
 **./ZusammenfassungML.tex
 (ZusammenfassungML.tex
@@ -390,7 +390,7 @@ File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
-<./images//modelworld.jpg, id=304, 317.68687pt x 183.68625pt>
+<./images//modelworld.jpg, id=312, 317.68687pt x 183.68625pt>
 File: ./images//modelworld.jpg Graphic file (type jpg)
 <use ./images//modelworld.jpg>
 Package pdftex.def Info: ./images//modelworld.jpg  used on input line 62.
@@ -400,7 +400,7 @@ Package pdftex.def Info: ./images//modelworld.jpg  used on input line 62.
 
 {C:/Users/bianc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2 <./images//m
 odelworld.jpg>] [3]
-<./images//IGD.jpg, id=335, 523.20468pt x 234.1247pt>
+<./images//IGD.jpg, id=343, 523.20468pt x 234.1247pt>
 File: ./images//IGD.jpg Graphic file (type jpg)
 <use ./images//IGD.jpg>
 Package pdftex.def Info: ./images//IGD.jpg  used on input line 149.
@@ -416,232 +416,237 @@ LaTeX Warning: Command \textasciiacute invalid in math mode on input line 159.
 LaTeX Warning: Command \textasciiacute invalid in math mode on input line 159.
 
 Missing character: There is no ´ in font cmr10!
-<./images//FindS.jpg, id=346, 593.21625pt x 235.63031pt>
+<./images//FindS.jpg, id=354, 593.21625pt x 235.63031pt>
 File: ./images//FindS.jpg Graphic file (type jpg)
 <use ./images//FindS.jpg>
 Package pdftex.def Info: ./images//FindS.jpg  used on input line 179.
 (pdftex.def)             Requested size: 360.0pt x 143.00081pt.
 [5 <./images//IGD.jpg>]
-<./images//Candidate1.jpg, id=353, 654.94687pt x 447.92343pt>
+<./images//Candidate1.jpg, id=361, 654.94687pt x 447.92343pt>
 File: ./images//Candidate1.jpg Graphic file (type jpg)
 <use ./images//Candidate1.jpg>
 Package pdftex.def Info: ./images//Candidate1.jpg  used on input line 182.
 (pdftex.def)             Requested size: 360.0pt x 246.20828pt.
-<./images//Candidate2.jpg, id=354, 667.74469pt x 453.19313pt>
+<./images//Candidate2.jpg, id=362, 667.74469pt x 453.19313pt>
 File: ./images//Candidate2.jpg Graphic file (type jpg)
 <use ./images//Candidate2.jpg>
 Package pdftex.def Info: ./images//Candidate2.jpg  used on input line 183.
 (pdftex.def)             Requested size: 360.0pt x 244.33339pt.
- [6 <./images//FindS.jpg>] [7 <./images//Candidate1.jpg> <./images//Candidate2.
-jpg>] [8] [9] [10]
-<./images//PT.jpg, id=382, 564.60938pt x 197.98969pt>
+ [6 <./images//FindS.jpg>]
+<./images//VersionSpace.jpg, id=367, 695.59875pt x 335.00156pt>
+File: ./images//VersionSpace.jpg Graphic file (type jpg)
+<use ./images//VersionSpace.jpg>
+Package pdftex.def Info: ./images//VersionSpace.jpg  used on input line 190.
+(pdftex.def)             Requested size: 360.0pt x 173.3737pt.
+<./images//VSBeispiel.jpg, id=368, 618.05907pt x 140.02313pt>
+File: ./images//VSBeispiel.jpg Graphic file (type jpg)
+<use ./images//VSBeispiel.jpg>
+Package pdftex.def Info: ./images//VSBeispiel.jpg  used on input line 192.
+(pdftex.def)             Requested size: 360.0pt x 81.56172pt.
+ [7 <./images//Candidate1.jpg> <./images//Candidate2.jpg>] [8 <./images//Versio
+nSpace.jpg> <./images//VSBeispiel.jpg>] [9] [10]
+<./images//PT.jpg, id=391, 564.60938pt x 197.98969pt>
 File: ./images//PT.jpg Graphic file (type jpg)
 <use ./images//PT.jpg>
-Package pdftex.def Info: ./images//PT.jpg  used on input line 300.
+Package pdftex.def Info: ./images//PT.jpg  used on input line 309.
 (pdftex.def)             Requested size: 360.0pt x 126.24167pt.
-<./images//BGD.jpg, id=383, 562.35094pt x 270.25969pt>
+ [11 <./images//PT.jpg>]
+<./images//BGD.jpg, id=396, 562.35094pt x 270.25969pt>
 File: ./images//BGD.jpg Graphic file (type jpg)
 <use ./images//BGD.jpg>
-Package pdftex.def Info: ./images//BGD.jpg  used on input line 326.
+Package pdftex.def Info: ./images//BGD.jpg  used on input line 335.
 (pdftex.def)             Requested size: 360.0pt x 173.01096pt.
- [11 <./images//PT.jpg>]
+ [12 <./images//BGD.jpg>]
 File: ./images//IGD.jpg Graphic file (type jpg)
 <use ./images//IGD.jpg>
-Package pdftex.def Info: ./images//IGD.jpg  used on input line 339.
+Package pdftex.def Info: ./images//IGD.jpg  used on input line 348.
 (pdftex.def)             Requested size: 360.0pt x 161.09607pt.
- [12 <./images//BGD.jpg>] [13]
-<./images//MP.jpg, id=397, 639.13782pt x 395.22656pt>
+ [13]
+[14]
+<./images//MP.jpg, id=410, 639.13782pt x 395.22656pt>
 File: ./images//MP.jpg Graphic file (type jpg)
 <use ./images//MP.jpg>
-Package pdftex.def Info: ./images//MP.jpg  used on input line 388.
+Package pdftex.def Info: ./images//MP.jpg  used on input line 397.
 (pdftex.def)             Requested size: 360.0pt x 222.61592pt.
- [14]
-<./images//forwardProp.jpg, id=402, 536.75531pt x 406.51875pt>
+<./images//forwardProp.jpg, id=411, 536.75531pt x 406.51875pt>
 File: ./images//forwardProp.jpg Graphic file (type jpg)
 <use ./images//forwardProp.jpg>
-Package pdftex.def Info: ./images//forwardProp.jpg  used on input line 391.
+Package pdftex.def Info: ./images//forwardProp.jpg  used on input line 400.
 (pdftex.def)             Requested size: 360.0pt x 272.65147pt.
-<./images//forwardPropBatch.jpg, id=403, 642.14906pt x 404.26031pt>
+<./images//forwardPropBatch.jpg, id=412, 642.14906pt x 404.26031pt>
 File: ./images//forwardPropBatch.jpg Graphic file (type jpg)
 <use ./images//forwardPropBatch.jpg>
-Package pdftex.def Info: ./images//forwardPropBatch.jpg  used on input line 393
+Package pdftex.def Info: ./images//forwardPropBatch.jpg  used on input line 402
 .
 (pdftex.def)             Requested size: 360.0pt x 226.64331pt.
- [15 <./images//MP.jpg> <./images//forwardProp.jpg>]
-<./images//BackwardProp.jpg, id=408, 606.76688pt x 409.53pt>
+ [15 <./images//MP.jpg>]
+<./images//BackwardProp.jpg, id=417, 606.76688pt x 409.53pt>
 File: ./images//BackwardProp.jpg Graphic file (type jpg)
 <use ./images//BackwardProp.jpg>
-Package pdftex.def Info: ./images//BackwardProp.jpg  used on input line 395.
+Package pdftex.def Info: ./images//BackwardProp.jpg  used on input line 404.
 (pdftex.def)             Requested size: 360.0pt x 242.98286pt.
-
-[16 <./images//forwardPropBatch.jpg> <./images//BackwardProp.jpg>]
-<./images//MultiIGD.jpg, id=413, 617.30624pt x 350.81062pt>
+ [16 <./images//forwardProp.jpg> <./images//forwardPropBatch.jpg>]
+<./images//MultiIGD.jpg, id=422, 617.30624pt x 350.81062pt>
 File: ./images//MultiIGD.jpg Graphic file (type jpg)
 <use ./images//MultiIGD.jpg>
-Package pdftex.def Info: ./images//MultiIGD.jpg  used on input line 412.
+Package pdftex.def Info: ./images//MultiIGD.jpg  used on input line 421.
 (pdftex.def)             Requested size: 360.0pt x 204.58905pt.
- [17 <./images//MultiIGD.jpg>] [18]
+ [17 <./images//BackwardProp.jpg>] [18 <./images//MultiIGD.jpg>] [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 469.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\in' on input line 469.
+(hyperref)                removing `math shift' on input line 478.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 469.
+(hyperref)                removing `\in' on input line 478.
 
-<./images//dTree.jpg, id=427, 574.39594pt x 208.52907pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 478.
+
+<./images//dTree.jpg, id=441, 574.39594pt x 208.52907pt>
 File: ./images//dTree.jpg Graphic file (type jpg)
 <use ./images//dTree.jpg>
-Package pdftex.def Info: ./images//dTree.jpg  used on input line 491.
+Package pdftex.def Info: ./images//dTree.jpg  used on input line 500.
 (pdftex.def)             Requested size: 360.0pt x 130.69626pt.
 
-Overfull \hbox (27.37506pt too wide) in paragraph at lines 489--492
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 498--501
 []  
  []
 
-[19]
-<./images//construct.jpg, id=436, 335.00156pt x 278.54062pt>
+[20 <./images//dTree.jpg>]
+<./images//construct.jpg, id=449, 335.00156pt x 278.54062pt>
 File: ./images//construct.jpg Graphic file (type jpg)
 <use ./images//construct.jpg>
-Package pdftex.def Info: ./images//construct.jpg  used on input line 498.
+Package pdftex.def Info: ./images//construct.jpg  used on input line 507.
 (pdftex.def)             Requested size: 360.0pt x 299.32332pt.
- [20 <./images//dTree.jpg>]
-<./images//classify.jpg, id=441, 403.5075pt x 94.10156pt>
+ [21 <./images//construct.jpg>]
+<./images//classify.jpg, id=454, 403.5075pt x 94.10156pt>
 File: ./images//classify.jpg Graphic file (type jpg)
 <use ./images//classify.jpg>
-Package pdftex.def Info: ./images//classify.jpg  used on input line 509.
+Package pdftex.def Info: ./images//classify.jpg  used on input line 518.
 (pdftex.def)             Requested size: 360.0pt x 83.95544pt.
- [21 <./images//construct.jpg>] [22 <./images//classify.jpg>]
-Overfull \hbox (71.44974pt too wide) detected at line 532
+ [22 <./images//classify.jpg>]
+Overfull \hbox (71.44974pt too wide) detected at line 541
 \OML/cmm/m/it/10.95 Err\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t; D\OT1/cmr/m/n
 /10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )) = [] = 1 \OMS/cmsy/m/n/10.95
    [] []
  []
 
 [23]
-Overfull \hbox (31.8278pt too wide) detected at line 580
+Overfull \hbox (31.8278pt too wide) detected at line 589
 \OML/cmm/m/it/10.95 []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 D\OT1/cmr/m/n/10
 .95 ) = 1 \OMS/cmsy/m/n/10.95   \OML/cmm/m/it/10.95 max\OMS/cmsy/m/n/10.95 f[]\
 OML/cmm/m/it/10.95 ; []\OMS/cmsy/m/n/10.95 g
  []
 
-<./images//impurity.jpg, id=460, 612.78937pt x 301.8778pt>
+<./images//impurity.jpg, id=469, 612.78937pt x 301.8778pt>
 File: ./images//impurity.jpg Graphic file (type jpg)
 <use ./images//impurity.jpg>
-Package pdftex.def Info: ./images//impurity.jpg  used on input line 586.
+Package pdftex.def Info: ./images//impurity.jpg  used on input line 595.
 (pdftex.def)             Requested size: 360.0pt x 177.34631pt.
 [24] [25 <./images//impurity.jpg>]
-<./images//impureEntropy2.jpg, id=470, 692.5875pt x 207.02344pt>
+<./images//impureEntropy2.jpg, id=479, 692.5875pt x 207.02344pt>
 File: ./images//impureEntropy2.jpg Graphic file (type jpg)
 <use ./images//impureEntropy2.jpg>
-Package pdftex.def Info: ./images//impureEntropy2.jpg  used on input line 623.
+Package pdftex.def Info: ./images//impureEntropy2.jpg  used on input line 632.
 (pdftex.def)             Requested size: 360.0pt x 107.61172pt.
-<./images//impureEntropyk.jpg, id=471, 688.07062pt x 185.94469pt>
+<./images//impureEntropyk.jpg, id=480, 688.07062pt x 185.94469pt>
 File: ./images//impureEntropyk.jpg Graphic file (type jpg)
 <use ./images//impureEntropyk.jpg>
-Package pdftex.def Info: ./images//impureEntropyk.jpg  used on input line 624.
+Package pdftex.def Info: ./images//impureEntropyk.jpg  used on input line 633.
 (pdftex.def)             Requested size: 360.0pt x 97.28477pt.
-<./images//lentropy.jpg, id=472, 570.63188pt x 130.23656pt>
+<./images//lentropy.jpg, id=481, 570.63188pt x 130.23656pt>
 File: ./images//lentropy.jpg Graphic file (type jpg)
 <use ./images//lentropy.jpg>
-Package pdftex.def Info: ./images//lentropy.jpg  used on input line 625.
+Package pdftex.def Info: ./images//lentropy.jpg  used on input line 634.
 (pdftex.def)             Requested size: 360.0pt x 82.16273pt.
-<./images//lentropy2.jpg, id=473, 596.2275pt x 113.67468pt>
+<./images//lentropy2.jpg, id=482, 596.2275pt x 113.67468pt>
 File: ./images//lentropy2.jpg Graphic file (type jpg)
 <use ./images//lentropy2.jpg>
-Package pdftex.def Info: ./images//lentropy2.jpg  used on input line 626.
+Package pdftex.def Info: ./images//lentropy2.jpg  used on input line 635.
 (pdftex.def)             Requested size: 360.0pt x 68.63548pt.
  [26 <./images//impureEntropy2.jpg> <./images//impureEntropyk.jpg> <./images//l
 entropy.jpg>]
-<./images//ID3Text.jpg, id=479, 572.89032pt x 405.76593pt>
+<./images//ID3Text.jpg, id=488, 572.89032pt x 405.76593pt>
 File: ./images//ID3Text.jpg Graphic file (type jpg)
 <use ./images//ID3Text.jpg>
-Package pdftex.def Info: ./images//ID3Text.jpg  used on input line 639.
+Package pdftex.def Info: ./images//ID3Text.jpg  used on input line 648.
 (pdftex.def)             Requested size: 360.0pt x 254.98378pt.
-<./images//ID3.jpg, id=480, 400.49625pt x 378.66469pt>
+<./images//ID3.jpg, id=489, 400.49625pt x 378.66469pt>
 File: ./images//ID3.jpg Graphic file (type jpg)
 <use ./images//ID3.jpg>
-Package pdftex.def Info: ./images//ID3.jpg  used on input line 640.
+Package pdftex.def Info: ./images//ID3.jpg  used on input line 649.
 (pdftex.def)             Requested size: 360.0pt x 340.39638pt.
  [27 <./images//lentropy2.jpg> <./images//ID3Text.jpg>]
-<./images//Pilze.jpg, id=487, 279.29344pt x 149.8097pt>
+<./images//Pilze.jpg, id=496, 279.29344pt x 149.8097pt>
 File: ./images//Pilze.jpg Graphic file (type jpg)
 <use ./images//Pilze.jpg>
-Package pdftex.def Info: ./images//Pilze.jpg  used on input line 649.
+Package pdftex.def Info: ./images//Pilze.jpg  used on input line 658.
 (pdftex.def)             Requested size: 360.0pt x 193.1067pt.
-<./images//ID3Pilze.jpg, id=488, 569.12625pt x 413.29407pt>
+<./images//ID3Pilze.jpg, id=497, 569.12625pt x 413.29407pt>
 File: ./images//ID3Pilze.jpg Graphic file (type jpg)
 <use ./images//ID3Pilze.jpg>
-Package pdftex.def Info: ./images//ID3Pilze.jpg  used on input line 650.
+Package pdftex.def Info: ./images//ID3Pilze.jpg  used on input line 659.
 (pdftex.def)             Requested size: 360.0pt x 261.4424pt.
-<./images//ID3Baum.jpg, id=489, 628.59843pt x 257.46187pt>
+<./images//ID3Baum.jpg, id=498, 628.59843pt x 257.46187pt>
 File: ./images//ID3Baum.jpg Graphic file (type jpg)
 <use ./images//ID3Baum.jpg>
-Package pdftex.def Info: ./images//ID3Baum.jpg  used on input line 651.
+Package pdftex.def Info: ./images//ID3Baum.jpg  used on input line 660.
 (pdftex.def)             Requested size: 360.0pt x 147.4462pt.
  [28 <./images//ID3.jpg>] [29 <./images//Pilze.jpg> <./images//ID3Pilze.jpg>]
-<./images//cart.jpg, id=498, 627.09282pt x 405.76593pt>
+<./images//cart.jpg, id=507, 627.09282pt x 405.76593pt>
 File: ./images//cart.jpg Graphic file (type jpg)
 <use ./images//cart.jpg>
-Package pdftex.def Info: ./images//cart.jpg  used on input line 673.
+Package pdftex.def Info: ./images//cart.jpg  used on input line 682.
 (pdftex.def)             Requested size: 360.0pt x 232.9483pt.
-<./images//cartTree.jpg, id=499, 609.02531pt x 313.17pt>
+<./images//cartTree.jpg, id=508, 609.02531pt x 313.17pt>
 File: ./images//cartTree.jpg Graphic file (type jpg)
 <use ./images//cartTree.jpg>
-Package pdftex.def Info: ./images//cartTree.jpg  used on input line 674.
+Package pdftex.def Info: ./images//cartTree.jpg  used on input line 683.
 (pdftex.def)             Requested size: 360.0pt x 185.1223pt.
  [30 <./images//ID3Baum.jpg>] [31 <./images//cart.jpg> <./images//cartTree.jpg>
 ]
-<./images//stopping.jpg, id=509, 617.30624pt x 394.47375pt>
+<./images//stopping.jpg, id=518, 617.30624pt x 394.47375pt>
 File: ./images//stopping.jpg Graphic file (type jpg)
 <use ./images//stopping.jpg>
-Package pdftex.def Info: ./images//stopping.jpg  used on input line 695.
+Package pdftex.def Info: ./images//stopping.jpg  used on input line 704.
 (pdftex.def)             Requested size: 360.0pt x 230.05293pt.
  [32 <./images//stopping.jpg>]
-<./images//pruning.jpg, id=516, 587.19376pt x 201.00093pt>
+<./images//pruning.jpg, id=525, 587.19376pt x 201.00093pt>
 File: ./images//pruning.jpg Graphic file (type jpg)
 <use ./images//pruning.jpg>
-Package pdftex.def Info: ./images//pruning.jpg  used on input line 711.
+Package pdftex.def Info: ./images//pruning.jpg  used on input line 720.
 (pdftex.def)             Requested size: 360.0pt x 123.22992pt.
-<./images//Errorpruning.jpg, id=517, 511.15968pt x 191.9672pt>
+<./images//Errorpruning.jpg, id=526, 511.15968pt x 191.9672pt>
 File: ./images//Errorpruning.jpg Graphic file (type jpg)
 <use ./images//Errorpruning.jpg>
-Package pdftex.def Info: ./images//Errorpruning.jpg  used on input line 733.
+Package pdftex.def Info: ./images//Errorpruning.jpg  used on input line 742.
 (pdftex.def)             Requested size: 360.0pt x 135.1992pt.
  [33 <./images//pruning.jpg>]
-<./images//pruningGraph.jpg, id=525, 392.21532pt x 252.19218pt>
+<./images//pruningGraph.jpg, id=534, 392.21532pt x 252.19218pt>
 File: ./images//pruningGraph.jpg Graphic file (type jpg)
 <use ./images//pruningGraph.jpg>
-Package pdftex.def Info: ./images//pruningGraph.jpg  used on input line 737.
+Package pdftex.def Info: ./images//pruningGraph.jpg  used on input line 746.
 (pdftex.def)             Requested size: 360.0pt x 231.49242pt.
  [34 <./images//Errorpruning.jpg> <./images//pruningGraph.jpg>]
-<./images//Bayes.jpg, id=530, 631.60968pt x 279.29344pt>
+<./images//Bayes.jpg, id=539, 631.60968pt x 279.29344pt>
 File: ./images//Bayes.jpg Graphic file (type jpg)
 <use ./images//Bayes.jpg>
-Package pdftex.def Info: ./images//Bayes.jpg  used on input line 750.
+Package pdftex.def Info: ./images//Bayes.jpg  used on input line 759.
 (pdftex.def)             Requested size: 360.0pt x 159.19038pt.
  [35 <./images//Bayes.jpg>] (ZusammenfassungML.aux)
-
-Package rerunfilecheck Warning: File `ZusammenfassungML.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ZusammenfassungML.out':
-(rerunfilecheck)             Before: C1F5DB489C46738ECA4EEFAF37B22B3A;13346
-(rerunfilecheck)             After:  F19195314D933C7C7F06A48B519A2243;13575.
+Package rerunfilecheck Info: File `ZusammenfassungML.out' has not changed.
+(rerunfilecheck)             Checksum: 0690C74694D615FA04097A501941908E;13711.
  ) 
 Here is how much of TeX's memory you used:
- 10007 strings out of 479334
- 146290 string characters out of 2857084
+ 10026 strings out of 479334
+ 146729 string characters out of 2857084
  444129 words of memory out of 3000000
- 27179 multiletter control sequences out of 15000+200000
+ 27197 multiletter control sequences out of 15000+200000
  412745 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,16n,74p,441b,557s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,16n,74p,441b,559s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\bianc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/bianc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/bianc/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -664,9 +669,9 @@ ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bianc/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C
 :/Users/bianc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb>
-Output written on ZusammenfassungML.pdf (35 pages, 1819729 bytes).
+Output written on ZusammenfassungML.pdf (35 pages, 1923513 bytes).
 PDF statistics:
- 627 PDF objects out of 1000 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
- 761 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 636 PDF objects out of 1000 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
+ 787 words of extra memory for PDF output out of 10000 (max. 10000000)
 
