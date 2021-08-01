@@ -22,7 +22,7 @@
  Siehe extra Tabelle (füge ich vllt irgendwann noch ein)
  
  Bis Overfitting hat Ln(a) die Zusammenfassung geschrieben. (Danke dafür) Meine Version ist \href{ https://docs.google.com/document/d/1jQWYKyFCRYTOLqHAkhHsVKfAQX4yOiVxVZzob_jcLQ4/edit?usp=sharing }{hier : Link}.
-\section{Definition Formel \& Algorithmen}
+\section{Definitionen}
 
 \subsection{Specification of learning tasks}
     \textbf{Realworld $\rightarrow$ Modelworld} \newline
@@ -60,54 +60,6 @@
         \item Nutze Statistik, Theorie und Algorithmen aus ML um den fit zwischen $c(\mathbf{x})$ und $y(\mathbf{x})$ zu Maximieren, sodass $y(\textbf{x} ) \approx c( \textbf{x} ) \approx \gamma (o)$
     \end{enumerate}
     \includegraphics[width= \textwidth]{modelworld}
-    
-    \subsection{LMS: Least Mean Squared}
-    Ziel: Fitting $y(x)$; Anpassung der weights, sodass Klassifizierungsfehler möglichst gering sind. \\~\\
-    Input: $D$ - Trainingsdaten ($\mathbf{x},c(\mathbf{x})$) mit \textbf{x}$\in \textbf{R}^p$ und Zielklasse c(\textbf{x}) 
-    $\eta$ Learning rate, kleine positive Konstante
-    \\~\\
-\includegraphics[width=\textwidth]{IGD}
-
-\subsection{Lineare Regression}
-
-Grundformel für lineare Gerade, mit: \newline
-$y(x)$ - abhängige Variabel
-$x$ - unabhängige Variable
-$w_1$ - Anstieg der Geraden
-$w_0$ - Schnittpunkt der y-Achse
-\begin{equation}
-    y(x)=w_o+w_1\cdot x
-\end{equation}
-Wobei das minimale $w_0$ und $w_1$ sich ergeben aus:
-\begin{equation}
-    w_1=\frac{\sum\limits^{n}_{i=1}(x_i-\overline{x}\cdot(y_i-\overline{y})}{\sum\limits_{i=1}^{n}(x_i-\overline{x}^2}
-\end{equation}
-\begin{equation}
-    w_0=\overline{y}-w_1\cdot\overline{x}
-\end{equation}
-
-\paragraph{Goodness of Modelfit, Regressionserror}
-Residual sum of Squares(RSS). \newline
-Der Residue wird aus der Differenz zwischen (beobachteten) Realwelt-Wert $y_i$ und geschätzten/modelierten Wert $y(\mathbf{x}_i)$
-\begin{equation}
-    RSS(\mathbf{w}) = \sum^{n}_{i=1}(y_i-y(\mathbf{x}_i))^2
-\end{equation}
-
-\paragraph{Higher-Dimensional Feature Space} ML:ll-16
-
-
-\subsection{Concept Learning}
-Setting:\newline
-$X$ - Menge an Feature Vektoren\newline
-$C$ - Ist eine Menge mit zwei Klassen \textit{Beipiel: \{0,1\},\{ja, nein\}} \newline
-$c: X \rightarrow C$ -idealer Klssifizierer für $X$ \newline
-$D=\{(\mathbf{x}_1,´c(\mathbf{x}_1)),\dots,(\mathbf{x}_n,c(\mathbf{x}_n))\} \subseteq X \times C$ - Menge mit Beispielen \newline
-Todo: \newline
-Schätze $c(x)$, was implizit durch $D$ mit feature-Value-Muster
-
-
-\newpage
-\section{Definitionen Text}
 \subsection{Supervised learning} 
     Eine Funktion mithilfe von input-output-Daten lernen; \newline
     automatisierte Klassifikation mit von Menschen bereits klassifizierten Daten als Grundlage \newline
@@ -150,7 +102,104 @@ Schätze $c(x)$, was implizit durch $D$ mit feature-Value-Muster
 Überprüfung der Klassifizierung eines Lernprozesses auf Richtigkeit für gewolltes Model.\newline
 \textit{Beispiel: Überprüfung eines Spamfilter nach falsch kategorisierten Mails}
 
+\subsection{Classification Approaches}
+\subsubsection{generative approches}
+exploit the distributions underlying the classes $\rightarrow$ discriminative: classsification rule \newline
+\textit{essbar\ nicht essbar}
+\subsubsection{discriminative approaches}
+learn a boundary between classes $\rightarrow$ generative: class membership probability \newline
+\textit{Mietpreis anhand von Lage, Baujahr etc.}
+
+\section{Machine Learning Basics}
+\subsection{Lineare Regression}
+\subsubsection{One Dimensional Feature Space}
+Grundformel für lineare Gerade, mit: \newline
+$y(x)$ - abhängige Variabel
+$x$ - unabhängige Variable
+$w_1$ - Anstieg der Geraden
+$w_0$ - Schnittpunkt der y-Achse
+\begin{equation}
+    y(x)=w_o+w_1\cdot x
+\end{equation}
+Wobei das minimale $w_0$ und $w_1$ sich ergeben aus:
+\begin{equation}
+    w_1=\frac{\sum\limits^{n}_{i=1}(x_i-\overline{x}\cdot(y_i-\overline{y}))}{\sum\limits_{i=1}^{n}(x_i-\overline{x}^2)}
+\end{equation}
+\begin{equation}
+    w_0=\overline{y}-w_1\cdot\overline{x}
+\end{equation}
+\subsubsection{Higher Dimensional Feature Space}
+$$ y(\textbf{x}) = w_0 + \sum^{p}_{j=1}(w_j \cdot x_j) $$
+oder Vektor notation with $x_0 = 1$ und $\textbf{w} = (w_0, w_1, ..., w_p)^T $ : $y(\textbf{x}) = \textbf{w}^T\textbf{x}$
+\paragraph{Goodness of Modelfit, Regressionserror}
+Residual sum of Squares(RSS). \newline
+Der Residue wird aus der Differenz zwischen (beobachteten) Realwelt-Wert $y_i$ und geschätzten/modelierten Wert  $y(\mathbf{x}_i)$ berechnet
+\begin{equation}
+    RSS(\mathbf{w}) = \sum^{n}_{i=1}(y_i-y(\mathbf{x}_i))^2
+\end{equation}
+RSS(\textbf{w}) minimieren:
+$$ \hat{w} \equiv w = (X^T X)^{-1} X^T \textbf{y} $$ 
+$$ \hat{y} = X\boldsymbol{\hat{w}} $$
+
+\subsection{LMS: Least Mean Squared}
+Ziel: Fitting $y(x)$; Anpassung der weights, sodass Klassifizierungsfehler möglichst gering sind. \\~\\
+Input: $D$ - Trainingsdaten ($\mathbf{x},c(\mathbf{x})$) mit \textbf{x}$\in \textbf{R}^p$ und Zielklasse c(\textbf{x}) 
+    $\eta$ Learning rate, kleine positive Konstante
+    \\~\\
+\includegraphics[width=\textwidth]{IGD}
+
+\paragraph{Higher-Dimensional Feature Space} ML:ll-16
+
+
+\subsection{Concept Learning}
+Setting:\newline
+$X$ - Menge an Feature Vektoren\newline
+$C$ - Ist eine Menge mit zwei Klassen \textit{Beipiel: \{0,1\},\{ja, nein\}} \newline
+$c: X \rightarrow C$ -idealer Klssifizierer für $X$ \newline
+$D=\{(\mathbf{x}_1,´c(\mathbf{x}_1)),\dots,(\mathbf{x}_n,c(\mathbf{x}_n))\} \subseteq X \times C$ - Menge mit Beispielen \newline
+$h(\textbf{x})$ hypothesis - besteht aus literalen, wildcards (?) und contradiction ($\bot$) \newline
+Todo: \newline
+Schätze $c(x)$, was implizit durch $D$ mit feature-Value-Muster
+
+maximally specific hypothesis: $s_0 = \langle \bot,\bot, \bot, \bot \rangle \equiv 0 $
+$\Rightarrow \nexists \textbf{x} \in X :  s_0(\textbf{x})$
+maximally general hypothesis: $g_0 = \langle ?, ?, ?, ? \rangle \equiv 1 $
+$\Rightarrow \forall \textbf{x} \in X : g_0(\textbf{x})  $
+
+
+$h_1(\textbf{x})$ is more general then $h_2(\textbf{x})$ ($h_1(\textbf{x})\geq_g h_2(\textbf{x})$) iff: 
+$$ \forall \textbf{x} \in X: h_2(\textbf{x})=1 \text{implies} h_2(\textbf{x})=1 $$
+ 
+strictly more general ($>_g$): $h_1(\textbf{x})\geq_g h_2(\textbf{x})$ und $h_2(\textbf{x})\ngeq_g h_1(\textbf{x})$
+more specific: the same but with $\leq_s $ 
+ 
+\subsubsection{Find-S}
+\includegraphics[width=\textwidth]{FindS}
+
 \section{Linear Models}
+\subsection{Logistic Regression}
+$$ y(\textbf{x}) = \sigma (\textbf{w}^{T} \textbf{x}) = \frac{1}{1+ e^{-w^Tx}} $$
+\begin{itemize}
+\item wie lineare Regression aber logistisch
+\item(binäre classification in 0/1 anhand von Beispieldaten D)
+\item nutzen wir weil noise, sonderfälle, Ausreißer und falsch gelabelte Beispiele in den Trainingsdaten weniger Problematisch sich auswirken auf das Ergebnis
+\item sigmoid logistisch weil sie “S” shaped ist und die spezielle, weil sie sich nur im Intervall [0,1] befindet $\rightarrow$ cool für Mathe
+\item $y(\textbf{x}) = P(c(\textbf{x})= 1 \mid \textbf{x};\textbf{w})$ : Wahrscheinlichkeit dass $c(\textbf{x}) = 1$ given \textbf{x}, parameterized by \textbf{w}
+\item $ y(\textbf{x}) = 0.67 \Rightarrow $ \textit{67 \% chance dass Mail = Spam }
+\end{itemize}
+
+$$ \text{Classification: Predict} \begin{cases}
+c(\textbf{x}) = 1      & \quad \text{if } \sigma (\textbf{w}^T \textbf{x}) \geq 0.5 \\
+c(\textbf{x}) = 0    & \quad \text{if } \sigma (\textbf{w}^T \textbf{x}) < 0.5
+\end{cases} $$
+\subsubsection{Loss for Logistic Regression}
+\begin{itemize}
+\item 0/1 Loss $ L_{0/1} (y(\textbf{x}), c(\textbf{x})) = I (\text{sign} (y(\textbf{x})-0.5) , c(\textbf{x})) $
+\item logistic loss $  L_{\sigma} (y(\textbf{x}), c(\textbf{x})) = \begin{cases}
+-log(y(\textbf{x}))      & \quad \text{if } c(\textbf{x}) = 1 \\
+-log(1 - y(\textbf{x}))      & \quad \text{otherwise }
+\end{cases} $
+\end{itemize}
 \subsection{Overfitting}
 \begin{itemize}
 \item fitting: der Prozess die Parameter einer Modelfunktion y so anzupassen das sie der der Beispieldaten D am besten passen
