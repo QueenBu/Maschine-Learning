@@ -191,6 +191,68 @@ Alle Hypothesen die für alle Beispiele aus D die richtigen Ergebnisse zurück g
 Wenn man den Version Space hat und für neue Daten evaluieren soll, kann man schauen auf wie viele der möglichen Hypothesen sie passen (+) bzw. nicht passen (-) und danach entscheiden
 \includegraphics[width=\textwidth]{VSBeispiel}
 
+\subsection{Evaluating Effectivness}
+\subsubsection{Generic Feature and Class Distributions}
+\begin{itemize}
+\item schreib ich nicht alles auf
+\item basically wie wahrscheinlich sind bestimmte Dinge unter Bedingungen
+\item \href{https://webis.de/downloads/lecturenotes/machine-learning/unit-en-evaluating-effectiveness.pdf}{Folien: hier}
+\end{itemize}
+\subsubsection{True Error}
+$ Err*(y) = \frac{Anzahl falsch classifizierter Beispiele}{Gesamtanzahl Beispiele} $
+\begin{itemize}
+\item Problem: c(\textbf{x}) nicht immer bekannt 
+\item wenn ich 3 von 10 Pilze falsch zuordne (essbar/ !essbar) ist mein Error 3/10
+\item auch True Misclassification Rate/ True Misclassification Error
+\end{itemize}
+\includegraphics[width=\textwidth]{Error}
+\subsubsection{Training Error}
+$Err_{tr}(y) = \frac{\mid \{ (\textbf{x},c(\textbf{x}) \in D_{tr} : y(\textbf{x})\neq c(\textbf{x}) \}\mid}{\mid D_{tr} \mid} $ = Anzahl der falsch klassifizierten \textbf{x} im Trainingsdatensatz durch Gesamtanzahl der \textbf{x} im Trainingsdatensatz D
+\begin{itemize}
+\item A classifier y(x) trained on D will on average outperform any classifier y’(x) trained on a subset of D. Hence, the error of y’ (x) may be considered as a lower bound for the (unknown) error of y(x).
+\item quantifies the memorization capability but not the generalization capability of y(\textbf{x})
+\item ‘ zeigt das mit Testset trainiert wurde
+\end{itemize}
+
+
+
+\subsubsection{Holdout Error}
+$ Err(y, D_{test})$ wir teilen D in $D_{tr}$ und $D_{test}$  (meist 2:1) trainieren y auf $D_{tr}$ und schauen dann wie viele Beispiele aus $D_{test}$ falsch klassifiziert werden (Anzahl falsch / Anzahl gesamt)
+
+\subsubsection{k-Fold Cross Validation}
+\begin{itemize}
+\item teile Datensatz in k ca. gleich große  Teildatensätze
+\item berechnen jetzt den Holdout error k mal (jeder Teildatensatz darf 1 mal Testdatensatz sein, während alle anderen Trainingsdatensatz sind) 
+\item bekommen also $Err_1, … , Err_k $  Fehlerwerte
+\item am Ende rechnen wir den Durchschnitt dieser aus
+\item Erhalten $Err_{cv}(y,k)$ 
+\item k sollte nicht zu groß (also nahe n) noch zu klein $(k = 1 → Err_{cv}(y,k) = Err_{tr}(y))$ sein 
+\end{itemize}
+
+\subsubsection{Comparing Model Variants}
+wir haben m-viele klassifizier ($y_1 - y_m$) mit m-vielen hyperparametern $\pi_1$ bis $pi_m$ (so $y_{\pi 1}$ usw.) und wollen wissen welcher ist am besten 
+
+
+\textbf{Single validation Set}
+\begin{itemize}
+\item Teile D in 3 Teile: $D_{training} , D_{validation}  \text{ und } D_{test}$
+\item trainiere alle $y_i$ auf $D_{tr}$
+\item schau welches $y_i$ die wenigsten Fehler auf $D_{val}$  macht
+\item berechne dieses $y_i$ (mit dem dazugehörigen $ \pi_i $) auf $D_{tr} + D_{val}$  neu (alias D - $D_{test}$)
+\item teste dieses $y_i$ auf $D_{test}$
+\end{itemize}
+
+\textbf{k validation Set}
+\begin{itemize}
+\item Teile D in 2 Teile, $D_{tr}$  und $D_{test}$
+\item teile $D_{tr}$ in k teile
+\item jedes dieses Teile darf jetzt einmal $D_{val}$ sein während die anderen  $D_{tr}$ sind
+\item berechne $y_i$  auf jeder dieser Optionen für $D_{tr}$ und den dazugehörigen Error auf $D_{val}$
+\item Berechne den Durchschnitts-Error für jedes $y_i$ 
+\item das beste $y_i$ berechne neu auf dem gesamten $D_{tr}$ (also D - $D_{test}$)
+\item berechne Error auf $D_{test}$
+\end{itemize}
+
 \section{Linear Models}
 \subsection{Logistic Regression}
 $$ y(\textbf{x}) = \sigma (\textbf{w}^{T} \textbf{x}) = \frac{1}{1+ e^{-w^Tx}} $$
